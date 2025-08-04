@@ -81,7 +81,7 @@ def run_judge_on_traces(judge_prompt: str, traces_df: pd.DataFrame) -> Tuple[Lis
     predictions = llm_generate(
         dataframe=traces_df,
         template=judge_prompt,
-        model=OpenAIModel(model='gpt-4o', api_key=os.getenv("OPENAI_API_KEY")),
+        model=OpenAIModel(model='gpt-4.1-nano', api_key=os.getenv("OPENAI_API_KEY")),
         verbose=True,
         output_parser=output_parser,
         include_prompt=True,
