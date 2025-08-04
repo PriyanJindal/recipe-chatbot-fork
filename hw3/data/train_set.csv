@@ -1,0 +1,1692 @@
+ground_truth_label,ground_truth_explanation,ground_truth_confidence,prompt,name,span_kind,parent_id,start_time,end_time,status_code,status_message,events,context.span_id,context.trace_id,attributes.id,attributes.output.mime_type,attributes.openinference.span.kind,attributes.query,attributes.trace_num,attributes.success,attributes.dietary_restriction,attributes.output.value,attributes.input.mime_type,attributes.input.value
+PASS,"The recipe for Spiced Chickpea and Sweet Potato Patties adheres to the vegan dietary restriction. It contains no animal products, using chickpeas, sweet potatoes, gluten-free oats, and flaxseed as the main ingredients. The use of olive oil for frying is also vegan-friendly. The recipe avoids any non-vegan ingredients such as dairy, eggs, or honey, and the preparation methods do not involve any animal products.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm vegan and gluten-free and also hate vegetables. What can I eat?
+Dietary Restriction: vegan
+Recipe Response: I have a delicious recipe for you that is both vegan and gluten-free, and it highlights flavors without relying heavily on vegetables. Let’s make **Spiced Chickpea and Sweet Potato Patties**!
+
+### Ingredients:
+- 1 can (15 oz) of chickpeas, drained and rinsed
+- 1 medium sweet potato (about 1 cup, cooked and mashed)
+- 1 cup gluten-free oats 
+- 1 tablespoon ground flaxseed
+- 2 tablespoons water
+- 1 teaspoon ground cumin
+- 1 teaspoon smoked paprika
+- 1 teaspoon garlic powder
+- 1 teaspoon onion powder
+- Salt and pepper to taste
+- Olive oil for frying
+
+### Serving Size:
+This recipe makes approximately 4 patties, enough for 2 servings.
+
+### Instructions:
+
+1. **Prepare the Sweet Potato**: Start by cooking the sweet potato. You can either boil it until tender (about 15 minutes) or poke holes in it and microwave it for about 5-7 minutes until soft. Once cooked, peel and mash the sweet potato in a bowl.
+
+2. **Activate the Flaxseed**: In a small bowl, combine 1 tablespoon of ground flaxseed with 2 tablespoons of water. Let it sit for about 5 minutes until it forms a gel-like consistency. This will act as a binding agent for your patties.
+
+3. **Combine Ingredients**: In a large bowl, add the rinsed chickpeas and use a fork or potato masher to gently mash them. You don’t want a completely smooth mixture; leaving some chickpeas whole adds texture to your patties. 
+
+4. **Mix in Remaining Ingredients**: Add the mashed sweet potato, activated flaxseed mixture, gluten-free oats, cumin, smoked paprika, garlic powder, onion powder, salt, and pepper to the chickpeas. Mix everything until well combined.
+
+5. **Form Patties**: Divide the mixture into 4 equal portions and shape them into patties, roughly 1/2 inch thick. If the mixture feels too wet, add a bit more gluten-free oats until it holds together.
+
+6. **Cook the Patties**: In a non-stick skillet, heat a tablespoon of olive oil over medium heat. Once hot, add the patties to the skillet (cooking in batches if necessary to avoid crowding). Cook for about 4-5 minutes on each side, or until they are golden brown and crispy.
+
+7. **Serve**: Once cooked, remove the patties from the skillet and let them drain on a paper towel. Serve warm, and you can enjoy them with a side of tahini sauce, avocado, or your favorite vegan dipping sauce.
+
+**Enjoy your Spiced Chickpea and Sweet Potato Patties! They’re packed with protein and flavor, and you might find that they’re a tasty way to enjoy wholesome ingredients without a strong veggie presence.**
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:28:14.510474+00:00,2025-08-04 00:28:26.571100+00:00,UNSET,,[],9b3dd1da67b75980,23ceedd4d562fde9663079a471b4db6a,29,text/plain,CHAIN,I'm vegan and gluten-free and also hate vegetables. What can I eat?,4,True,vegan,"I have a delicious recipe for you that is both vegan and gluten-free, and it highlights flavors without relying heavily on vegetables. Let’s make **Spiced Chickpea and Sweet Potato Patties**!
+
+### Ingredients:
+- 1 can (15 oz) of chickpeas, drained and rinsed
+- 1 medium sweet potato (about 1 cup, cooked and mashed)
+- 1 cup gluten-free oats 
+- 1 tablespoon ground flaxseed
+- 2 tablespoons water
+- 1 teaspoon ground cumin
+- 1 teaspoon smoked paprika
+- 1 teaspoon garlic powder
+- 1 teaspoon onion powder
+- Salt and pepper to taste
+- Olive oil for frying
+
+### Serving Size:
+This recipe makes approximately 4 patties, enough for 2 servings.
+
+### Instructions:
+
+1. **Prepare the Sweet Potato**: Start by cooking the sweet potato. You can either boil it until tender (about 15 minutes) or poke holes in it and microwave it for about 5-7 minutes until soft. Once cooked, peel and mash the sweet potato in a bowl.
+
+2. **Activate the Flaxseed**: In a small bowl, combine 1 tablespoon of ground flaxseed with 2 tablespoons of water. Let it sit for about 5 minutes until it forms a gel-like consistency. This will act as a binding agent for your patties.
+
+3. **Combine Ingredients**: In a large bowl, add the rinsed chickpeas and use a fork or potato masher to gently mash them. You don’t want a completely smooth mixture; leaving some chickpeas whole adds texture to your patties. 
+
+4. **Mix in Remaining Ingredients**: Add the mashed sweet potato, activated flaxseed mixture, gluten-free oats, cumin, smoked paprika, garlic powder, onion powder, salt, and pepper to the chickpeas. Mix everything until well combined.
+
+5. **Form Patties**: Divide the mixture into 4 equal portions and shape them into patties, roughly 1/2 inch thick. If the mixture feels too wet, add a bit more gluten-free oats until it holds together.
+
+6. **Cook the Patties**: In a non-stick skillet, heat a tablespoon of olive oil over medium heat. Once hot, add the patties to the skillet (cooking in batches if necessary to avoid crowding). Cook for about 4-5 minutes on each side, or until they are golden brown and crispy.
+
+7. **Serve**: Once cooked, remove the patties from the skillet and let them drain on a paper towel. Serve warm, and you can enjoy them with a side of tahini sauce, avocado, or your favorite vegan dipping sauce.
+
+**Enjoy your Spiced Chickpea and Sweet Potato Patties! They’re packed with protein and flavor, and you might find that they’re a tasty way to enjoy wholesome ingredients without a strong veggie presence.**",text/plain,I'm vegan and gluten-free and also hate vegetables. What can I eat?
+PASS,"The recipe for Halal Grilled Chicken Skewers with Tzatziki Sauce adheres to halal dietary restrictions. The chicken used is assumed to be halal, as the recipe specifies 'halal' in the title. The ingredients for both the chicken skewers and the tzatziki sauce do not include any haram (forbidden) items such as pork or alcohol. The preparation method does not involve any non-halal practices. The use of Greek yogurt in the tzatziki sauce is permissible in halal diets, provided the yogurt is made from halal-certified milk. Overall, the recipe respects halal dietary laws.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Halal BBQ recipe for summer
+Dietary Restriction: halal
+Recipe Response: **Halal Grilled Chicken Skewers with Tzatziki Sauce**
+
+**Serving Size**: 2 people (approx. 4 skewers)
+
+### Ingredients:
+
+**For the Chicken Skewers:**
+- 1 pound of boneless chicken breasts, cut into 1-inch pieces
+- 2 tablespoons olive oil
+- 2 tablespoons lemon juice (freshly squeezed)
+- 2 cloves garlic, minced
+- 1 teaspoon ground cumin
+- 1 teaspoon paprika
+- 1 teaspoon dried oregano
+- Salt and pepper to taste
+- 4 wooden or metal skewers (if using wooden skewers, soak them in water for 30 minutes to prevent burning)
+
+**For the Tzatziki Sauce:**
+- 1 cup plain Greek yogurt
+- 1 cucumber, grated and excess liquid squeezed out
+- 1 garlic clove, minced
+- 1 tablespoon fresh dill (or 1 teaspoon dried dill)
+- 1 tablespoon lemon juice
+- Salt and pepper to taste
+
+### Instructions:
+
+#### Step 1: Marinate the Chicken
+1. In a large bowl, combine the olive oil, lemon juice, minced garlic, ground cumin, paprika, dried oregano, salt, and pepper. Whisk the marinade ingredients together until well blended.
+2. Add the cubed chicken pieces to the bowl. Toss to coat all chicken pieces evenly in the marinade. 
+3. Cover the bowl with plastic wrap and let the chicken marinate in the refrigerator for at least 30 minutes (or up to 2 hours for maximum flavor).
+
+#### Step 2: Prepare the Tzatziki Sauce
+1. In a medium bowl, combine the Greek yogurt, grated cucumber (after squeezing out the excess liquid), minced garlic, dill, lemon juice, salt, and pepper.
+2. Stir all ingredients together until well combined. Taste and adjust seasoning if needed. Set aside in the refrigerator to chill until serving.
+
+#### Step 3: Prepare the Grill
+1. Preheat your grill to medium-high heat (around 400°F / 200°C).
+2. If using wooden skewers, ensure they have been soaked in water to prevent burning.
+
+#### Step 4: Assemble the Skewers
+1. Thread the marinated chicken pieces onto the skewers, leaving a bit of space between each piece to ensure even cooking.
+2. Aim for about 4-5 pieces of chicken per skewer.
+
+#### Step 5: Grill the Skewers
+1. Once your grill is preheated, place the skewers on the grill.
+2. Cook for about 10-15 minutes, turning occasionally, until the chicken is fully cooked and has a nice char (internal temperature should reach 165°F / 75°C).
+
+#### Step 6: Serve
+1. Once cooked, remove the skewers from the grill and let them rest for a couple of minutes.
+2. Serve the chicken skewers hot with the chilled tzatziki sauce on the side. You can also add some fresh pita bread and mixed salad for a complete meal!
+
+Enjoy your delicious Halal BBQ grilled chicken skewers with refreshing tzatziki sauce this summer!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:29:45.325334+00:00,2025-08-04 00:29:56.842029+00:00,UNSET,,[],a02fc8108d36d553,5d9cdc01e04d793c14e74f26b9eb983e,54,text/plain,CHAIN,Halal BBQ recipe for summer,4,True,halal,"**Halal Grilled Chicken Skewers with Tzatziki Sauce**
+
+**Serving Size**: 2 people (approx. 4 skewers)
+
+### Ingredients:
+
+**For the Chicken Skewers:**
+- 1 pound of boneless chicken breasts, cut into 1-inch pieces
+- 2 tablespoons olive oil
+- 2 tablespoons lemon juice (freshly squeezed)
+- 2 cloves garlic, minced
+- 1 teaspoon ground cumin
+- 1 teaspoon paprika
+- 1 teaspoon dried oregano
+- Salt and pepper to taste
+- 4 wooden or metal skewers (if using wooden skewers, soak them in water for 30 minutes to prevent burning)
+
+**For the Tzatziki Sauce:**
+- 1 cup plain Greek yogurt
+- 1 cucumber, grated and excess liquid squeezed out
+- 1 garlic clove, minced
+- 1 tablespoon fresh dill (or 1 teaspoon dried dill)
+- 1 tablespoon lemon juice
+- Salt and pepper to taste
+
+### Instructions:
+
+#### Step 1: Marinate the Chicken
+1. In a large bowl, combine the olive oil, lemon juice, minced garlic, ground cumin, paprika, dried oregano, salt, and pepper. Whisk the marinade ingredients together until well blended.
+2. Add the cubed chicken pieces to the bowl. Toss to coat all chicken pieces evenly in the marinade. 
+3. Cover the bowl with plastic wrap and let the chicken marinate in the refrigerator for at least 30 minutes (or up to 2 hours for maximum flavor).
+
+#### Step 2: Prepare the Tzatziki Sauce
+1. In a medium bowl, combine the Greek yogurt, grated cucumber (after squeezing out the excess liquid), minced garlic, dill, lemon juice, salt, and pepper.
+2. Stir all ingredients together until well combined. Taste and adjust seasoning if needed. Set aside in the refrigerator to chill until serving.
+
+#### Step 3: Prepare the Grill
+1. Preheat your grill to medium-high heat (around 400°F / 200°C).
+2. If using wooden skewers, ensure they have been soaked in water to prevent burning.
+
+#### Step 4: Assemble the Skewers
+1. Thread the marinated chicken pieces onto the skewers, leaving a bit of space between each piece to ensure even cooking.
+2. Aim for about 4-5 pieces of chicken per skewer.
+
+#### Step 5: Grill the Skewers
+1. Once your grill is preheated, place the skewers on the grill.
+2. Cook for about 10-15 minutes, turning occasionally, until the chicken is fully cooked and has a nice char (internal temperature should reach 165°F / 75°C).
+
+#### Step 6: Serve
+1. Once cooked, remove the skewers from the grill and let them rest for a couple of minutes.
+2. Serve the chicken skewers hot with the chilled tzatziki sauce on the side. You can also add some fresh pita bread and mixed salad for a complete meal!
+
+Enjoy your delicious Halal BBQ grilled chicken skewers with refreshing tzatziki sauce this summer!",text/plain,Halal BBQ recipe for summer
+PASS,"The recipe for Chocolate Avocado Mousse adheres to the dairy-free dietary restriction. It uses avocado as the base for creaminess instead of dairy products. The recipe explicitly avoids coconut milk, which the user dislikes, and does not include any other dairy ingredients such as milk, cheese, or butter. Optional toppings include dairy-free whipped cream, ensuring the dessert remains dairy-free. The use of maple syrup or honey as a sweetener does not violate the dairy-free restriction.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm dairy-free and also can't stand the taste of coconut milk. What dessert can I make?
+Dietary Restriction: dairy-free
+Recipe Response: I have a delightful recipe for **Chocolate Avocado Mousse** that is dairy-free, coconut-free, and incredibly rich and creamy! This indulgent dessert serves 2 people and is simple to make.
+
+### Ingredients:
+- 1 ripe avocado
+- 2 tablespoons unsweetened cocoa powder
+- 3 tablespoons maple syrup (or honey, if preferred)
+- 1 teaspoon vanilla extract
+- A pinch of salt
+- Optional toppings: fresh berries, nuts, or dairy-free whipped cream
+
+### Instructions:
+
+1. **Prepare the Avocado**: Start by cutting the ripe avocado in half and removing the pit. Use a spoon to scoop the flesh into a mixing bowl.
+
+2. **Blend the Ingredients**: Add the unsweetened cocoa powder, maple syrup, vanilla extract, and a pinch of salt to the bowl with the avocado. 
+
+3. **Mash and Mix**: Using a fork or a hand mixer, thoroughly mash and mix the ingredients together until you achieve a smooth and creamy consistency. If you have a food processor, you can also blend everything together for an even silkier texture.
+
+4. **Taste and Adjust**: After blending, give the mousse a taste. If you prefer it sweeter, add a little more maple syrup and blend again until mixed.
+
+5. **Chill Out**: Once the mousse is well-mixed, transfer it into two serving dishes. Cover them with plastic wrap or lids if you desire, and place in the refrigerator for about 30 minutes to chill. This step lets the flavors meld beautifully.
+
+6. **Serve and Garnish**: After chilling, remove the mousse from the refrigerator. You can garnish it with fresh berries, a sprinkle of nuts, or a dollop of dairy-free whipped cream if you like. 
+
+7. **Enjoy**: Dig in and enjoy your rich, creamy, and dairy-free chocolate avocado mousse!
+
+This dessert is not only delicious but also packed with healthy fats from the avocado! Enjoy your sweet treat!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:26:50.549418+00:00,2025-08-04 00:26:58.211631+00:00,UNSET,,[],38eee54f176ec311,016822e1793496289628a9a009f07b34,4,text/plain,CHAIN,I'm dairy-free and also can't stand the taste of coconut milk. What dessert can I make?,10,True,dairy-free,"I have a delightful recipe for **Chocolate Avocado Mousse** that is dairy-free, coconut-free, and incredibly rich and creamy! This indulgent dessert serves 2 people and is simple to make.
+
+### Ingredients:
+- 1 ripe avocado
+- 2 tablespoons unsweetened cocoa powder
+- 3 tablespoons maple syrup (or honey, if preferred)
+- 1 teaspoon vanilla extract
+- A pinch of salt
+- Optional toppings: fresh berries, nuts, or dairy-free whipped cream
+
+### Instructions:
+
+1. **Prepare the Avocado**: Start by cutting the ripe avocado in half and removing the pit. Use a spoon to scoop the flesh into a mixing bowl.
+
+2. **Blend the Ingredients**: Add the unsweetened cocoa powder, maple syrup, vanilla extract, and a pinch of salt to the bowl with the avocado. 
+
+3. **Mash and Mix**: Using a fork or a hand mixer, thoroughly mash and mix the ingredients together until you achieve a smooth and creamy consistency. If you have a food processor, you can also blend everything together for an even silkier texture.
+
+4. **Taste and Adjust**: After blending, give the mousse a taste. If you prefer it sweeter, add a little more maple syrup and blend again until mixed.
+
+5. **Chill Out**: Once the mousse is well-mixed, transfer it into two serving dishes. Cover them with plastic wrap or lids if you desire, and place in the refrigerator for about 30 minutes to chill. This step lets the flavors meld beautifully.
+
+6. **Serve and Garnish**: After chilling, remove the mousse from the refrigerator. You can garnish it with fresh berries, a sprinkle of nuts, or a dollop of dairy-free whipped cream if you like. 
+
+7. **Enjoy**: Dig in and enjoy your rich, creamy, and dairy-free chocolate avocado mousse!
+
+This dessert is not only delicious but also packed with healthy fats from the avocado! Enjoy your sweet treat!",text/plain,I'm dairy-free and also can't stand the taste of coconut milk. What dessert can I make?
+FAIL,"The recipe fails to adhere to the raw vegan dietary restriction due to the inclusion of cooked quinoa. Raw vegan diets do not allow foods to be heated above 118°F (48°C), and cooking quinoa involves boiling, which exceeds this temperature. Additionally, the optional inclusion of feta cheese, even though it is marked as optional, is not suitable for a vegan diet. The rest of the ingredients and preparation methods are appropriate for a raw vegan diet.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Raw vegan salad that doesn't taste like grass
+Dietary Restriction: raw vegan
+Recipe Response: Here's a delicious Raw Vegan Mediterranean Quinoa Salad that is refreshing, full of flavor, and won’t taste like grass. This recipe serves 2 people.
+
+**Ingredients:**
+
+- 1 cup cooked quinoa (use pre-cooked or soak 1/3 cup dry quinoa and rinse)
+- 1 cup cherry tomatoes, halved
+- 1 cucumber, diced
+- 1 bell pepper (red or yellow), diced
+- 1/4 red onion, finely chopped
+- 1/2 avocado, diced
+- 1/4 cup pitted kalamata olives, halved
+- 1/4 cup parsley, finely chopped
+- Juice of 1 lemon
+- 2 tablespoons extra virgin olive oil
+- Salt and black pepper to taste
+- Optional: Feta cheese (for a non-vegan version), or vegan cheese
+
+**Instructions:**
+
+1. **Prepare the Quinoa:**  
+   If you're using dry quinoa, rinse 1/3 cup under cold water. Combine it with 2/3 cup of water in a pot. Bring to a boil, then reduce to a simmer, cover, and cook for about 15 minutes, or until all water is absorbed. Fluff with a fork and let it cool.
+
+2. **Chop the Veggies:**  
+   While the quinoa is cooking, take your cherry tomatoes and cut them in half. Dice the cucumber, bell pepper, and avocado, and finely chop the red onion and parsley. Place all these in a large salad bowl.
+
+3. **Combine Ingredients:**  
+   Once the quinoa has cooled, add it to the bowl with the chopped vegetables. Then, add the halved kalamata olives.
+
+4. **Make the Dressing:**  
+   In a small bowl, whisk together the lemon juice and extra virgin olive oil. Season with a pinch of salt and black pepper to taste. Adjust according to preference; if you want it zestier, add more lemon juice.
+
+5. **Toss the Salad:**  
+   Drizzle the dressing over the quinoa and vegetable mixture. Gently toss everything together until all ingredients are well coated with the dressing.
+
+6. **Serve:**  
+   If you like, crumble some feta or sprinkle vegan cheese on top before serving for an added burst of flavor. Serve immediately, or let it chill in the refrigerator for about 30 minutes to allow the flavors to meld.
+
+This Mediterranean Quinoa Salad is delightful and packed with nutrients, ensuring a satisfying meal without a grassy taste. Enjoy!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:27:01.230186+00:00,2025-08-04 00:27:13.549289+00:00,UNSET,,[],7ec540708a45026d,f0a8ff26b8d6a095568e048f8c57224a,9,text/plain,CHAIN,Raw vegan salad that doesn't taste like grass,5,True,raw vegan,"Here's a delicious Raw Vegan Mediterranean Quinoa Salad that is refreshing, full of flavor, and won’t taste like grass. This recipe serves 2 people.
+
+**Ingredients:**
+
+- 1 cup cooked quinoa (use pre-cooked or soak 1/3 cup dry quinoa and rinse)
+- 1 cup cherry tomatoes, halved
+- 1 cucumber, diced
+- 1 bell pepper (red or yellow), diced
+- 1/4 red onion, finely chopped
+- 1/2 avocado, diced
+- 1/4 cup pitted kalamata olives, halved
+- 1/4 cup parsley, finely chopped
+- Juice of 1 lemon
+- 2 tablespoons extra virgin olive oil
+- Salt and black pepper to taste
+- Optional: Feta cheese (for a non-vegan version), or vegan cheese
+
+**Instructions:**
+
+1. **Prepare the Quinoa:**  
+   If you're using dry quinoa, rinse 1/3 cup under cold water. Combine it with 2/3 cup of water in a pot. Bring to a boil, then reduce to a simmer, cover, and cook for about 15 minutes, or until all water is absorbed. Fluff with a fork and let it cool.
+
+2. **Chop the Veggies:**  
+   While the quinoa is cooking, take your cherry tomatoes and cut them in half. Dice the cucumber, bell pepper, and avocado, and finely chop the red onion and parsley. Place all these in a large salad bowl.
+
+3. **Combine Ingredients:**  
+   Once the quinoa has cooled, add it to the bowl with the chopped vegetables. Then, add the halved kalamata olives.
+
+4. **Make the Dressing:**  
+   In a small bowl, whisk together the lemon juice and extra virgin olive oil. Season with a pinch of salt and black pepper to taste. Adjust according to preference; if you want it zestier, add more lemon juice.
+
+5. **Toss the Salad:**  
+   Drizzle the dressing over the quinoa and vegetable mixture. Gently toss everything together until all ingredients are well coated with the dressing.
+
+6. **Serve:**  
+   If you like, crumble some feta or sprinkle vegan cheese on top before serving for an added burst of flavor. Serve immediately, or let it chill in the refrigerator for about 30 minutes to allow the flavors to meld.
+
+This Mediterranean Quinoa Salad is delightful and packed with nutrients, ensuring a satisfying meal without a grassy taste. Enjoy!",text/plain,Raw vegan salad that doesn't taste like grass
+PASS,"The recipe adheres to the raw vegan dietary restriction. All ingredients are plant-based, with no animal products included. The preparation method does not involve cooking or heating above 118°F, as the warmth is achieved through blending, which uses friction to slightly warm the soup. The use of spices like smoked paprika and fresh ginger adds a warming sensation without actual heat. The recipe maintains the raw vegan principles by using fresh, uncooked ingredients and a method that respects the temperature limit.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Raw vegan soup that's actually warm somehow?
+Dietary Restriction: raw vegan
+Recipe Response: Certainly! Here’s a delightful recipe for a Raw Vegan Warm Soup that utilizes the warmth of spices and a few clever techniques to create a comforting bowl without any cooking involved.
+
+### Raw Vegan Spiced Tomato and Basil Soup
+
+#### Serving Size:
+2 people
+
+#### Ingredients:
+- 4 large ripe tomatoes
+- 1 medium red bell pepper
+- 1 small cucumber
+- 1 clove garlic
+- 1 tablespoon olive oil
+- 1 teaspoon fresh grated ginger
+- 1 teaspoon smoked paprika
+- 1 teaspoon dried oregano
+- 1 teaspoon sea salt (adjust to taste)
+- A handful of fresh basil leaves
+- 1 cup of filtered water (adjust for desired consistency)
+
+#### Instructions:
+
+1. **Prepare the Vegetables**: Start by washing the tomatoes, bell pepper, and cucumber under cold water. Cut the tomatoes into quarters and remove the seeds if you wish for a smoother texture. Chop the red bell pepper into large pieces and the cucumber into chunks.
+
+2. **Blend the Base**: In a high-speed blender, combine the chopped tomatoes, red bell pepper, and cucumber. This combination forms the vibrant base of your soup. 
+
+3. **Add Aromatics and Spice**: Next, add the garlic clove (peeled), olive oil, fresh ginger, smoked paprika, dried oregano, and sea salt to the blender. 
+
+4. **Blend Until Smooth**: Blend on high until the mixture is completely smooth. This should take about 1-2 minutes. The friction from the blades will gently warm the soup, making it feel cozy and comforting without cooking.
+
+5. **Incorporate Fresh Basil**: Once blended, add the fresh basil leaves to the mixture and pulse the blender just a few times until the basil is roughly chopped but not completely puréed. This will provide beautiful flecks of green in your soup.
+
+6. **Adjust Consistency**: If you prefer a thinner soup, slowly add in the filtered water while blending until you reach your desired consistency. 
+
+7. **Taste and Adjust Seasoning**: Grab a spoon and taste your soup! You can adjust the seasoning by adding more salt or spices according to your preference.
+
+8. **Serve Warm**: Pour the soup into bowls and allow it to sit for a minute, as the blending process will have warmed it slightly. If you’d like it a tad warmer, you can briefly blend it again for a few seconds while holding the lid tightly.
+
+9. **Garnish and Enjoy**: Optionally, you can garnish the soup with a few whole basil leaves or a drizzle of olive oil before serving. Enjoy your warm raw vegan tomato and basil soup!
+
+Enjoy your deliciously unique soup experience!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:28:10.530610+00:00,2025-08-04 00:28:21.292073+00:00,UNSET,,[],99fee73d21fe0b18,61222993a02953673bb731e2edd8de0f,27,text/plain,CHAIN,Raw vegan soup that's actually warm somehow?,5,True,raw vegan,"Certainly! Here’s a delightful recipe for a Raw Vegan Warm Soup that utilizes the warmth of spices and a few clever techniques to create a comforting bowl without any cooking involved.
+
+### Raw Vegan Spiced Tomato and Basil Soup
+
+#### Serving Size:
+2 people
+
+#### Ingredients:
+- 4 large ripe tomatoes
+- 1 medium red bell pepper
+- 1 small cucumber
+- 1 clove garlic
+- 1 tablespoon olive oil
+- 1 teaspoon fresh grated ginger
+- 1 teaspoon smoked paprika
+- 1 teaspoon dried oregano
+- 1 teaspoon sea salt (adjust to taste)
+- A handful of fresh basil leaves
+- 1 cup of filtered water (adjust for desired consistency)
+
+#### Instructions:
+
+1. **Prepare the Vegetables**: Start by washing the tomatoes, bell pepper, and cucumber under cold water. Cut the tomatoes into quarters and remove the seeds if you wish for a smoother texture. Chop the red bell pepper into large pieces and the cucumber into chunks.
+
+2. **Blend the Base**: In a high-speed blender, combine the chopped tomatoes, red bell pepper, and cucumber. This combination forms the vibrant base of your soup. 
+
+3. **Add Aromatics and Spice**: Next, add the garlic clove (peeled), olive oil, fresh ginger, smoked paprika, dried oregano, and sea salt to the blender. 
+
+4. **Blend Until Smooth**: Blend on high until the mixture is completely smooth. This should take about 1-2 minutes. The friction from the blades will gently warm the soup, making it feel cozy and comforting without cooking.
+
+5. **Incorporate Fresh Basil**: Once blended, add the fresh basil leaves to the mixture and pulse the blender just a few times until the basil is roughly chopped but not completely puréed. This will provide beautiful flecks of green in your soup.
+
+6. **Adjust Consistency**: If you prefer a thinner soup, slowly add in the filtered water while blending until you reach your desired consistency. 
+
+7. **Taste and Adjust Seasoning**: Grab a spoon and taste your soup! You can adjust the seasoning by adding more salt or spices according to your preference.
+
+8. **Serve Warm**: Pour the soup into bowls and allow it to sit for a minute, as the blending process will have warmed it slightly. If you’d like it a tad warmer, you can briefly blend it again for a few seconds while holding the lid tightly.
+
+9. **Garnish and Enjoy**: Optionally, you can garnish the soup with a few whole basil leaves or a drizzle of olive oil before serving. Enjoy your warm raw vegan tomato and basil soup!
+
+Enjoy your deliciously unique soup experience!",text/plain,Raw vegan soup that's actually warm somehow?
+PASS,"The recipe for Vegetarian Coconut Curry adheres to the vegetarian dietary restriction as it contains no meat or fish. The ingredients listed are all plant-based, including mixed vegetables, coconut milk, and various spices. Additionally, the recipe respects the request to exclude onions and garlic for religious reasons, using ginger and spices to add flavor instead. The preparation methods are appropriate for a vegetarian diet.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Vegetarian curry but I don't eat onions or garlic for religious reasons
+Dietary Restriction: vegetarian
+Recipe Response: Certainly! Here’s a delightful recipe for a **Vegetarian Coconut Curry**, without onions or garlic, that serves 2 people.
+
+### Vegetarian Coconut Curry
+
+#### Ingredients:
+- 1 cup of mixed vegetables (carrots, bell peppers, peas, cauliflower)
+- 1 cup of coconut milk
+- 1 tablespoon of vegetable oil (or coconut oil)
+- 1 tablespoon of fresh ginger, grated
+- 1 tablespoon of curry powder
+- 1 teaspoon of turmeric powder
+- 1 teaspoon of cumin powder
+- Salt and pepper, to taste
+- Fresh cilantro for garnish (optional)
+- Cooked rice or naan, for serving
+
+#### Instructions:
+
+1. **Prepare the Vegetables**: If you haven't done so, chop your mixed vegetables into bite-sized pieces. This allows for even cooking and better texture in the curry.
+
+2. **Heat the Oil**: In a medium-sized pot, heat the vegetable oil over medium heat. You can use coconut oil for a richer flavor, especially since it pairs well with the coconut milk.
+
+3. **Sauté the Ginger**: Once the oil is hot, add the grated ginger to the pot. Sauté it for about 1 minute, stirring constantly to avoid burning. This step will release its aromatic flavor.
+
+4. **Add Spices**: Sprinkle in the curry powder, turmeric powder, and cumin powder. Stir the spices with the ginger for about 30 seconds, letting their fragrance fill the air. This step is crucial to activate the essential oils in the spices.
+
+5. **Incorporate the Vegetables**: Add the mixed vegetables to the pot and stir well, coating them with the spice mixture. Cook for another 2-3 minutes, allowing the vegetables to soften slightly.
+
+6. **Add Coconut Milk**: Pour in the coconut milk and stir to combine. Bring the mixture to a gentle simmer. Once it starts bubbling, reduce the heat to low and let it simmer for about 10-15 minutes, until the vegetables are tender and the flavors meld together.
+
+7. **Season**: Taste the curry and add salt and pepper as needed.
+
+8. **Serve**: Once the curry is ready, you can serve it hot, garnished with fresh cilantro if desired. Enjoy it with your choice of cooked rice or warm naan to soak up all that delicious sauce.
+
+### Enjoy Your Meal!
+This coconut curry is rich, creamy, and packed with flavor, and the absence of onions and garlic keeps it suitable for your dietary needs! Enjoy!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:27:29.920467+00:00,2025-08-04 00:27:38.259818+00:00,UNSET,,[],e51165193b590513,36050e116859c1713985ed72609e4870,16,text/plain,CHAIN,Vegetarian curry but I don't eat onions or garlic for religious reasons,4,True,vegetarian,"Certainly! Here’s a delightful recipe for a **Vegetarian Coconut Curry**, without onions or garlic, that serves 2 people.
+
+### Vegetarian Coconut Curry
+
+#### Ingredients:
+- 1 cup of mixed vegetables (carrots, bell peppers, peas, cauliflower)
+- 1 cup of coconut milk
+- 1 tablespoon of vegetable oil (or coconut oil)
+- 1 tablespoon of fresh ginger, grated
+- 1 tablespoon of curry powder
+- 1 teaspoon of turmeric powder
+- 1 teaspoon of cumin powder
+- Salt and pepper, to taste
+- Fresh cilantro for garnish (optional)
+- Cooked rice or naan, for serving
+
+#### Instructions:
+
+1. **Prepare the Vegetables**: If you haven't done so, chop your mixed vegetables into bite-sized pieces. This allows for even cooking and better texture in the curry.
+
+2. **Heat the Oil**: In a medium-sized pot, heat the vegetable oil over medium heat. You can use coconut oil for a richer flavor, especially since it pairs well with the coconut milk.
+
+3. **Sauté the Ginger**: Once the oil is hot, add the grated ginger to the pot. Sauté it for about 1 minute, stirring constantly to avoid burning. This step will release its aromatic flavor.
+
+4. **Add Spices**: Sprinkle in the curry powder, turmeric powder, and cumin powder. Stir the spices with the ginger for about 30 seconds, letting their fragrance fill the air. This step is crucial to activate the essential oils in the spices.
+
+5. **Incorporate the Vegetables**: Add the mixed vegetables to the pot and stir well, coating them with the spice mixture. Cook for another 2-3 minutes, allowing the vegetables to soften slightly.
+
+6. **Add Coconut Milk**: Pour in the coconut milk and stir to combine. Bring the mixture to a gentle simmer. Once it starts bubbling, reduce the heat to low and let it simmer for about 10-15 minutes, until the vegetables are tender and the flavors meld together.
+
+7. **Season**: Taste the curry and add salt and pepper as needed.
+
+8. **Serve**: Once the curry is ready, you can serve it hot, garnished with fresh cilantro if desired. Enjoy it with your choice of cooked rice or warm naan to soak up all that delicious sauce.
+
+### Enjoy Your Meal!
+This coconut curry is rich, creamy, and packed with flavor, and the absence of onions and garlic keeps it suitable for your dietary needs! Enjoy!",text/plain,Vegetarian curry but I don't eat onions or garlic for religious reasons
+PASS,"The recipe for One-Pan Lemon Garlic Chicken with Vegetables adheres to the paleo dietary restriction. It includes fresh, whole ingredients such as chicken, olive oil, garlic, lemon, and a variety of vegetables, all of which are compliant with the paleo diet. The recipe avoids grains, legumes, dairy, refined sugar, and processed foods, which are not allowed in a paleo diet. The preparation method is simple and does not involve any non-paleo ingredients or techniques.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I avoid processed foods but I'm lazy
+Dietary Restriction: paleo
+Recipe Response: I completely understand! Here's a simple and wholesome recipe that requires minimal effort but is delicious and healthy. Let me present you with a **One-Pan Lemon Garlic Chicken with Vegetables**. This dish features fresh ingredients and is easy to prepare, making it perfect for you!
+
+### One-Pan Lemon Garlic Chicken with Vegetables
+
+**Servings:** 2
+
+#### Ingredients:
+- 2 boneless, skinless chicken breasts
+- 2 tablespoons olive oil
+- 2 cloves garlic, minced
+- 1 lemon (juiced and zested)
+- 1 teaspoon dried oregano
+- Salt and pepper, to taste
+- 1 cup broccoli florets
+- 1 cup baby carrots (or sliced carrots)
+- 1 medium red bell pepper, cut into strips
+- Fresh parsley (for garnish, optional)
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 400°F (200°C). This will ensure that your chicken and vegetables cook evenly and become tender.
+
+2. **Marinate the Chicken:**
+   In a small bowl, whisk together 1 tablespoon of olive oil, minced garlic, lemon juice, lemon zest, oregano, salt, and pepper. Place the chicken breasts in a resealable plastic bag or a shallow dish and pour the marinade over them. Let it marinate for at least 10 minutes while you prepare the vegetables.
+
+3. **Prepare the Vegetables:**
+   On a large baking sheet, toss the broccoli, baby carrots, and red bell pepper strips with the remaining tablespoon of olive oil. Season with a pinch of salt and pepper, mixing everything well to coat the vegetables in oil.
+
+4. **Place Chicken on the Baking Sheet:**
+   Remove the chicken from the marinade and place it in the center of the baking sheet, surrounded by the vegetables.
+
+5. **Bake:**
+   Put the baking sheet in the preheated oven and bake for 25-30 minutes, or until the chicken is cooked through and reaches an internal temperature of 165°F (75°C) and the vegetables are tender.
+
+6. **Serve:**
+   Once done, remove from the oven and let it rest for a few minutes. If desired, sprinkle freshly chopped parsley over the chicken and vegetables for extra flavor and a pop of color. Serve hot and enjoy!
+
+### Tips:
+- You can swap out the vegetables for any others you have on hand, such as zucchini or asparagus.
+- For extra flavor, consider adding a sprinkle of Italian seasoning or red pepper flakes.
+- This dish pairs beautifully with brown rice or quinoa if you'd like a more filling meal.
+
+Enjoy your delicious and nutritious One-Pan Lemon Garlic Chicken with Vegetables! This recipe is perfect for a hassle-free weeknight dinner.
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:29:15.891917+00:00,2025-08-04 00:29:25.866400+00:00,UNSET,,[],e2fcbbb914d81eb4,e7662f5f96ef5e2c35ba6facd7b97ddb,46,text/plain,CHAIN,I avoid processed foods but I'm lazy,6,True,paleo,"I completely understand! Here's a simple and wholesome recipe that requires minimal effort but is delicious and healthy. Let me present you with a **One-Pan Lemon Garlic Chicken with Vegetables**. This dish features fresh ingredients and is easy to prepare, making it perfect for you!
+
+### One-Pan Lemon Garlic Chicken with Vegetables
+
+**Servings:** 2
+
+#### Ingredients:
+- 2 boneless, skinless chicken breasts
+- 2 tablespoons olive oil
+- 2 cloves garlic, minced
+- 1 lemon (juiced and zested)
+- 1 teaspoon dried oregano
+- Salt and pepper, to taste
+- 1 cup broccoli florets
+- 1 cup baby carrots (or sliced carrots)
+- 1 medium red bell pepper, cut into strips
+- Fresh parsley (for garnish, optional)
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 400°F (200°C). This will ensure that your chicken and vegetables cook evenly and become tender.
+
+2. **Marinate the Chicken:**
+   In a small bowl, whisk together 1 tablespoon of olive oil, minced garlic, lemon juice, lemon zest, oregano, salt, and pepper. Place the chicken breasts in a resealable plastic bag or a shallow dish and pour the marinade over them. Let it marinate for at least 10 minutes while you prepare the vegetables.
+
+3. **Prepare the Vegetables:**
+   On a large baking sheet, toss the broccoli, baby carrots, and red bell pepper strips with the remaining tablespoon of olive oil. Season with a pinch of salt and pepper, mixing everything well to coat the vegetables in oil.
+
+4. **Place Chicken on the Baking Sheet:**
+   Remove the chicken from the marinade and place it in the center of the baking sheet, surrounded by the vegetables.
+
+5. **Bake:**
+   Put the baking sheet in the preheated oven and bake for 25-30 minutes, or until the chicken is cooked through and reaches an internal temperature of 165°F (75°C) and the vegetables are tender.
+
+6. **Serve:**
+   Once done, remove from the oven and let it rest for a few minutes. If desired, sprinkle freshly chopped parsley over the chicken and vegetables for extra flavor and a pop of color. Serve hot and enjoy!
+
+### Tips:
+- You can swap out the vegetables for any others you have on hand, such as zucchini or asparagus.
+- For extra flavor, consider adding a sprinkle of Italian seasoning or red pepper flakes.
+- This dish pairs beautifully with brown rice or quinoa if you'd like a more filling meal.
+
+Enjoy your delicious and nutritious One-Pan Lemon Garlic Chicken with Vegetables! This recipe is perfect for a hassle-free weeknight dinner.",text/plain,I avoid processed foods but I'm lazy
+FAIL,"The recipe is labeled as dairy-free but includes cheese as an optional ingredient. The dietary restriction specified is dairy-free, which means no dairy products should be included. Even though the cheese is optional, its inclusion as a possibility violates the strict definition of dairy-free. The recipe does offer a dairy-free cream alternative, but the presence of cheese as an option does not fully adhere to the dairy-free restriction.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Dairy-free but cheese is okay sometimes
+Dietary Restriction: dairy-free
+Recipe Response: I have a wonderful recipe for a **Creamy Tomato Basil Pasta** that can be dairy-free but includes cheese for flavor. This recipe serves 2.
+
+### Ingredients:
+- 8 ounces of pasta (such as spaghetti or penne)
+- 1 tablespoon olive oil
+- 2 cloves garlic, minced
+- 1 (14-ounce) can of crushed tomatoes
+- 1 teaspoon dried oregano
+- Salt and pepper, to taste
+- 1/4 cup fresh basil, chopped (plus extra for garnish)
+- 1/4 cup dairy-free cream (or regular cream if desired)
+- 1/4 cup grated cheese (Parmesan or dairy-free alternative), optional
+
+### Instructions:
+
+1. **Cook the Pasta**: Start by bringing a large pot of salted water to a boil. Add the pasta and cook according to the package instructions until al dente. Once cooked, reserve about 1/2 cup of the pasta water, and then drain the pasta.
+
+2. **Prepare the Sauce**: In a large skillet, heat the olive oil over medium heat. Add the minced garlic and sauté for about 30 seconds or until fragrant, being careful not to let it burn.
+
+3. **Add Tomatoes and Seasoning**: Pour in the crushed tomatoes and stir in the dried oregano. Season with salt and pepper. Allow the sauce to bubble gently, cooking for about 5-7 minutes until it thickens slightly.
+
+4. **Incorporate the Cream**: Stir in the dairy-free cream (or regular cream), which will give the sauce a rich, creamy texture. Add the chopped basil and mix until well combined. Let it simmer for another 2 minutes.
+
+5. **Combine with Pasta**: Add the drained pasta to the skillet and toss it in the sauce. If the sauce seems too thick, gradually add some reserved pasta water until you reach your desired consistency. 
+
+6. **Add Cheese**: If using cheese, sprinkle it over the pasta and toss lightly to combine.
+
+7. **Serve**: Divide the Creamy Tomato Basil Pasta between two plates. Garnish with additional fresh basil and, if desired, a sprinkle of extra cheese.
+
+### Enjoy!
+This dish is sure to please. You get the comforting essence of pasta with a rich, flavorful sauce that is quick and easy to prepare. Perfect for a cozy dinner!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:29:22.115266+00:00,2025-08-04 00:29:31.250003+00:00,UNSET,,[],71378e557893cb1a,7fcd1ddf1049ebd3fc16755337adaee2,47,text/plain,CHAIN,Dairy-free but cheese is okay sometimes,10,True,dairy-free,"I have a wonderful recipe for a **Creamy Tomato Basil Pasta** that can be dairy-free but includes cheese for flavor. This recipe serves 2.
+
+### Ingredients:
+- 8 ounces of pasta (such as spaghetti or penne)
+- 1 tablespoon olive oil
+- 2 cloves garlic, minced
+- 1 (14-ounce) can of crushed tomatoes
+- 1 teaspoon dried oregano
+- Salt and pepper, to taste
+- 1/4 cup fresh basil, chopped (plus extra for garnish)
+- 1/4 cup dairy-free cream (or regular cream if desired)
+- 1/4 cup grated cheese (Parmesan or dairy-free alternative), optional
+
+### Instructions:
+
+1. **Cook the Pasta**: Start by bringing a large pot of salted water to a boil. Add the pasta and cook according to the package instructions until al dente. Once cooked, reserve about 1/2 cup of the pasta water, and then drain the pasta.
+
+2. **Prepare the Sauce**: In a large skillet, heat the olive oil over medium heat. Add the minced garlic and sauté for about 30 seconds or until fragrant, being careful not to let it burn.
+
+3. **Add Tomatoes and Seasoning**: Pour in the crushed tomatoes and stir in the dried oregano. Season with salt and pepper. Allow the sauce to bubble gently, cooking for about 5-7 minutes until it thickens slightly.
+
+4. **Incorporate the Cream**: Stir in the dairy-free cream (or regular cream), which will give the sauce a rich, creamy texture. Add the chopped basil and mix until well combined. Let it simmer for another 2 minutes.
+
+5. **Combine with Pasta**: Add the drained pasta to the skillet and toss it in the sauce. If the sauce seems too thick, gradually add some reserved pasta water until you reach your desired consistency. 
+
+6. **Add Cheese**: If using cheese, sprinkle it over the pasta and toss lightly to combine.
+
+7. **Serve**: Divide the Creamy Tomato Basil Pasta between two plates. Garnish with additional fresh basil and, if desired, a sprinkle of extra cheese.
+
+### Enjoy!
+This dish is sure to please. You get the comforting essence of pasta with a rich, flavorful sauce that is quick and easy to prepare. Perfect for a cozy dinner!",text/plain,Dairy-free but cheese is okay sometimes
+PASS,"The recipe provided is for Shrimp Scampi Pasta, which includes shrimp as the primary seafood ingredient. Since the dietary restriction is pescatarian, which allows for seafood but not other meats, this recipe adheres to the restriction. The use of shrimp instead of fish is appropriate for someone who dislikes fish but follows a pescatarian diet. All other ingredients, such as pasta, olive oil, garlic, and optional Parmesan cheese, are also suitable for a pescatarian diet. The recipe does not include any non-pescatarian ingredients or methods.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?
+Dietary Restriction: pescatarian
+Recipe Response: Absolutely! Here’s a delightful recipe for **Shrimp Scampi Pasta** that emphasizes the flavors of seafood without relying on fish.
+
+### Shrimp Scampi Pasta
+
+**Servings:** 2
+
+#### Ingredients:
+- 200g (7 oz) spaghetti or linguine
+- 200g (7 oz) large shrimp, peeled and deveined
+- 3 tablespoons olive oil
+- 3 cloves garlic, minced
+- 1/4 teaspoon red pepper flakes (adjust to taste)
+- 1/2 cup white wine (or vegetable broth for non-alcoholic option)
+- 1 tablespoon lemon juice (freshly squeezed)
+- Zest of 1 lemon
+- 1/4 cup fresh parsley, chopped
+- Salt and black pepper, to taste
+- Grated Parmesan cheese (optional for serving)
+
+#### Instructions:
+
+1. **Cook the Pasta:** 
+   - Begin by bringing a large pot of salted water to a boil. Add the spaghetti or linguine and cook according to the package instructions until al dente (usually about 8-10 minutes). Reserve about 1/2 cup of the pasta water, then drain the pasta and set aside.
+
+2. **Prepare the Shrimp:** 
+   - While the pasta is cooking, heat 2 tablespoons of olive oil in a large skillet over medium-high heat. Once the oil is hot, add the minced garlic and red pepper flakes. Sauté for about 30 seconds, just until fragrant—make sure not to let it burn.
+
+3. **Cook the Shrimp:**
+   - Add the shrimp to the skillet. Season with a pinch of salt and black pepper. Cook for about 2-3 minutes on each side or until they turn pink and opaque. Remove the shrimp from the skillet and set them aside on a plate.
+
+4. **Deglaze the Pan:**
+   - In the same skillet, pour in the white wine (or vegetable broth) and let it simmer for about 2 minutes to reduce slightly, scraping up any bits stuck to the bottom of the pan. This will enhance the flavor.
+
+5. **Combine Ingredients:**
+   - Lower the heat to medium and add the lemon juice and zest to the skillet. Stir to combine. Return the shrimp to the skillet, along with the cooked pasta and reserved pasta water. Toss everything together to coat the pasta and shrimp in the sauce. If the mixture seems dry, you can add a bit more pasta water.
+
+6. **Finishing Touches:**
+   - Stir in the chopped parsley and adjust seasoning with salt and pepper to taste. Allow everything to heat through for another minute.
+
+7. **Serve:**
+   - Divide the shrimp scampi pasta onto two plates, and if desired, sprinkle grated Parmesan cheese on top before serving. Garnish with extra parsley for a fresh touch.
+
+Enjoy your flavorful Shrimp Scampi Pasta! It's sure to be a hit even if you're not a fan of fish.
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:27:04.113314+00:00,2025-08-04 00:27:17.039481+00:00,UNSET,,[],c8b5aa5a8784131d,0c9d9f2d8e41a42e395ac2ccf9800921,10,text/plain,CHAIN,I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?,1,True,pescatarian,"Absolutely! Here’s a delightful recipe for **Shrimp Scampi Pasta** that emphasizes the flavors of seafood without relying on fish.
+
+### Shrimp Scampi Pasta
+
+**Servings:** 2
+
+#### Ingredients:
+- 200g (7 oz) spaghetti or linguine
+- 200g (7 oz) large shrimp, peeled and deveined
+- 3 tablespoons olive oil
+- 3 cloves garlic, minced
+- 1/4 teaspoon red pepper flakes (adjust to taste)
+- 1/2 cup white wine (or vegetable broth for non-alcoholic option)
+- 1 tablespoon lemon juice (freshly squeezed)
+- Zest of 1 lemon
+- 1/4 cup fresh parsley, chopped
+- Salt and black pepper, to taste
+- Grated Parmesan cheese (optional for serving)
+
+#### Instructions:
+
+1. **Cook the Pasta:** 
+   - Begin by bringing a large pot of salted water to a boil. Add the spaghetti or linguine and cook according to the package instructions until al dente (usually about 8-10 minutes). Reserve about 1/2 cup of the pasta water, then drain the pasta and set aside.
+
+2. **Prepare the Shrimp:** 
+   - While the pasta is cooking, heat 2 tablespoons of olive oil in a large skillet over medium-high heat. Once the oil is hot, add the minced garlic and red pepper flakes. Sauté for about 30 seconds, just until fragrant—make sure not to let it burn.
+
+3. **Cook the Shrimp:**
+   - Add the shrimp to the skillet. Season with a pinch of salt and black pepper. Cook for about 2-3 minutes on each side or until they turn pink and opaque. Remove the shrimp from the skillet and set them aside on a plate.
+
+4. **Deglaze the Pan:**
+   - In the same skillet, pour in the white wine (or vegetable broth) and let it simmer for about 2 minutes to reduce slightly, scraping up any bits stuck to the bottom of the pan. This will enhance the flavor.
+
+5. **Combine Ingredients:**
+   - Lower the heat to medium and add the lemon juice and zest to the skillet. Stir to combine. Return the shrimp to the skillet, along with the cooked pasta and reserved pasta water. Toss everything together to coat the pasta and shrimp in the sauce. If the mixture seems dry, you can add a bit more pasta water.
+
+6. **Finishing Touches:**
+   - Stir in the chopped parsley and adjust seasoning with salt and pepper to taste. Allow everything to heat through for another minute.
+
+7. **Serve:**
+   - Divide the shrimp scampi pasta onto two plates, and if desired, sprinkle grated Parmesan cheese on top before serving. Garnish with extra parsley for a fresh touch.
+
+Enjoy your flavorful Shrimp Scampi Pasta! It's sure to be a hit even if you're not a fan of fish.",text/plain,I'm pescatarian but I hate fish. Can you give me a seafood pasta recipe?
+PASS,"The recipe for Almond Flour Vanilla Birthday Cake is suitable for a diabetic-friendly diet. It uses almond flour, which is low in carbohydrates and has a low glycemic index, making it a good choice for managing blood sugar levels. The recipe replaces traditional sugar with erythritol, a sugar substitute that does not significantly impact blood glucose levels. Additionally, the use of unsweetened applesauce and almond milk helps keep the carbohydrate content low. The recipe avoids high-sugar ingredients and focuses on natural sweeteners, aligning well with diabetic dietary needs.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I want to make a birthday cake but I'm diabetic. Something that still tastes good?
+Dietary Restriction: diabetic-friendly
+Recipe Response: Here's a delicious diabetic-friendly recipe for a **Almond Flour Vanilla Birthday Cake** that serves 2 people. It's low in carbohydrates and uses natural sweeteners to keep the flavor satisfying without the sugar spike.
+
+### Almond Flour Vanilla Birthday Cake
+
+#### Ingredients:
+- 1 cup almond flour
+- 1/4 cup erythritol (or another sugar substitute of your choice)
+- 1/4 tsp baking powder
+- 1/4 tsp baking soda
+- 1/4 tsp salt
+- 2 large eggs
+- 2 tbsp unsweetened applesauce
+- 1/2 tsp vanilla extract
+- 1/4 cup unsweetened almond milk (or any milk alternative)
+- Optional: sugar-free frosting or whipped cream for decoration
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 350°F (175°C). Grease a small round cake pan (about 6 inches) or line it with parchment paper.
+
+2. **Mix Dry Ingredients:**
+   In a medium mixing bowl, combine the almond flour, erythritol, baking powder, baking soda, and salt. Stir these dry ingredients until they are well mixed.
+
+3. **Combine Wet Ingredients:**
+   In another bowl, whisk together the eggs, applesauce, vanilla extract, and almond milk until the mixture is smooth and well-blended.
+
+4. **Combine All Ingredients:**
+   Gradually add the wet mixture to the dry ingredients, stirring until just combined. Be careful not to over-mix, as this can affect the texture of the cake.
+
+5. **Pour into Pan:**
+   Pour the batter into the prepared cake pan. Use a spatula to spread it evenly, smoothing out the top.
+
+6. **Bake:**
+   Place the cake in the preheated oven. Bake for about 20-25 minutes or until a toothpick inserted in the center comes out clean. The cake should be lightly golden on top.
+
+7. **Cool the Cake:**
+   Once baked, remove the cake from the oven and allow it to cool in the pan for about 10 minutes. Carefully run a knife around the edges to loosen it and then turn it out onto a wire rack to cool completely.
+
+8. **Decoration:**
+   Once the cake is completely cool, you can frost it with sugar-free frosting or top it with a dollop of whipped cream if you like. You can also add some fresh berries for a burst of flavor without adding sugar.
+
+9. **Serve:**
+   Slice the cake in half to share, and enjoy your delicious and diabetes-friendly birthday treat!
+
+This Almond Flour Vanilla Birthday Cake is delightful and offers a great balance of flavor and nutrition for those watching their sugar intake. Enjoy the celebration!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:26:55.383082+00:00,2025-08-04 00:27:07.511124+00:00,UNSET,,[],563fd7921f6ec97d,c1363e15649e3a0e6931d5c0bc5e7bd3,7,text/plain,CHAIN,I want to make a birthday cake but I'm diabetic. Something that still tastes good?,2,True,diabetic-friendly,"Here's a delicious diabetic-friendly recipe for a **Almond Flour Vanilla Birthday Cake** that serves 2 people. It's low in carbohydrates and uses natural sweeteners to keep the flavor satisfying without the sugar spike.
+
+### Almond Flour Vanilla Birthday Cake
+
+#### Ingredients:
+- 1 cup almond flour
+- 1/4 cup erythritol (or another sugar substitute of your choice)
+- 1/4 tsp baking powder
+- 1/4 tsp baking soda
+- 1/4 tsp salt
+- 2 large eggs
+- 2 tbsp unsweetened applesauce
+- 1/2 tsp vanilla extract
+- 1/4 cup unsweetened almond milk (or any milk alternative)
+- Optional: sugar-free frosting or whipped cream for decoration
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 350°F (175°C). Grease a small round cake pan (about 6 inches) or line it with parchment paper.
+
+2. **Mix Dry Ingredients:**
+   In a medium mixing bowl, combine the almond flour, erythritol, baking powder, baking soda, and salt. Stir these dry ingredients until they are well mixed.
+
+3. **Combine Wet Ingredients:**
+   In another bowl, whisk together the eggs, applesauce, vanilla extract, and almond milk until the mixture is smooth and well-blended.
+
+4. **Combine All Ingredients:**
+   Gradually add the wet mixture to the dry ingredients, stirring until just combined. Be careful not to over-mix, as this can affect the texture of the cake.
+
+5. **Pour into Pan:**
+   Pour the batter into the prepared cake pan. Use a spatula to spread it evenly, smoothing out the top.
+
+6. **Bake:**
+   Place the cake in the preheated oven. Bake for about 20-25 minutes or until a toothpick inserted in the center comes out clean. The cake should be lightly golden on top.
+
+7. **Cool the Cake:**
+   Once baked, remove the cake from the oven and allow it to cool in the pan for about 10 minutes. Carefully run a knife around the edges to loosen it and then turn it out onto a wire rack to cool completely.
+
+8. **Decoration:**
+   Once the cake is completely cool, you can frost it with sugar-free frosting or top it with a dollop of whipped cream if you like. You can also add some fresh berries for a burst of flavor without adding sugar.
+
+9. **Serve:**
+   Slice the cake in half to share, and enjoy your delicious and diabetes-friendly birthday treat!
+
+This Almond Flour Vanilla Birthday Cake is delightful and offers a great balance of flavor and nutrition for those watching their sugar intake. Enjoy the celebration!",text/plain,I want to make a birthday cake but I'm diabetic. Something that still tastes good?
+PASS,"The recipe for Vegan and Gluten-Free Chickpea Curry adheres to the vegan dietary restriction as it contains no animal products. All ingredients listed, such as chickpeas, coconut milk, coconut oil, garlic, ginger, and spices, are plant-based. The preparation method does not involve any non-vegan techniques or ingredients. Additionally, the recipe is gluten-free as it does not include any gluten-containing grains. The use of rice or quinoa as a serving option is also gluten-free. Therefore, the recipe is suitable for someone following a vegan diet.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm vegan and gluten-free and also hate vegetables. What can I eat?
+Dietary Restriction: vegan
+Recipe Response: I have a delicious Vegan and Gluten-Free Chickpea Curry recipe that doesn't heavily rely on vegetables while still being flavorful and satisfying. This meal is perfect for two servings.
+
+### Vegan and Gluten-Free Chickpea Curry
+
+#### Ingredients:
+- 1 can (15 oz) chickpeas, drained and rinsed
+- 1 can (14 oz) coconut milk
+- 2 tablespoons coconut oil (or any vegetable oil you prefer)
+- 2 cloves garlic, minced
+- 1 inch ginger, minced
+- 1 teaspoon ground cumin
+- 1 teaspoon ground coriander
+- 1 teaspoon turmeric powder
+- 1 teaspoon garam masala
+- Salt to taste
+- 1 tablespoon lemon juice
+- Cooked rice or quinoa (for serving)
+
+#### Instructions:
+
+1. **Sauté Aromatics**: In a medium saucepan, heat the coconut oil over medium heat. Once hot, add the minced garlic and ginger. Sauté for about 1 minute, stirring frequently, until fragrant but not browned.
+
+2. **Add Spices**: Sprinkle in ground cumin, coriander, turmeric, and garam masala. Cook for another minute, allowing the spices to toast slightly. This step will enhance the flavors of the curry.
+
+3. **Add Chickpeas and Coconut Milk**: Now, add the drained and rinsed chickpeas into the pan, stirring to combine them with the sautéed aromatics and spices. Pour in the coconut milk and stir well.
+
+4. **Simmer the Curry**: Bring the mixture to a gentle simmer. Let it cook for about 10-15 minutes, stirring occasionally, until the curry thickens slightly. If it becomes too thick, you can add a splash of water to reach your desired consistency.
+
+5. **Season**: After simmering, stir in the lemon juice and add salt to taste. Adjust the seasoning if necessary.
+
+6. **Serve**: Serve the chickpea curry over a bed of cooked rice or quinoa for a hearty meal. You can also garnish it with fresh herbs if you like (coriander or parsley work well), but they are optional.
+
+### Enjoy Your Meal!
+This comforting chickpea curry is rich, creamy, and packed with flavors, all while being easy to prepare. Enjoy your delicious meal!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:28:13.905499+00:00,2025-08-04 00:28:26.034076+00:00,UNSET,,[],8d9391177aaf9573,41e36ad278ec928617a1979c4faf6905,29,text/plain,CHAIN,I'm vegan and gluten-free and also hate vegetables. What can I eat?,1,True,vegan,"I have a delicious Vegan and Gluten-Free Chickpea Curry recipe that doesn't heavily rely on vegetables while still being flavorful and satisfying. This meal is perfect for two servings.
+
+### Vegan and Gluten-Free Chickpea Curry
+
+#### Ingredients:
+- 1 can (15 oz) chickpeas, drained and rinsed
+- 1 can (14 oz) coconut milk
+- 2 tablespoons coconut oil (or any vegetable oil you prefer)
+- 2 cloves garlic, minced
+- 1 inch ginger, minced
+- 1 teaspoon ground cumin
+- 1 teaspoon ground coriander
+- 1 teaspoon turmeric powder
+- 1 teaspoon garam masala
+- Salt to taste
+- 1 tablespoon lemon juice
+- Cooked rice or quinoa (for serving)
+
+#### Instructions:
+
+1. **Sauté Aromatics**: In a medium saucepan, heat the coconut oil over medium heat. Once hot, add the minced garlic and ginger. Sauté for about 1 minute, stirring frequently, until fragrant but not browned.
+
+2. **Add Spices**: Sprinkle in ground cumin, coriander, turmeric, and garam masala. Cook for another minute, allowing the spices to toast slightly. This step will enhance the flavors of the curry.
+
+3. **Add Chickpeas and Coconut Milk**: Now, add the drained and rinsed chickpeas into the pan, stirring to combine them with the sautéed aromatics and spices. Pour in the coconut milk and stir well.
+
+4. **Simmer the Curry**: Bring the mixture to a gentle simmer. Let it cook for about 10-15 minutes, stirring occasionally, until the curry thickens slightly. If it becomes too thick, you can add a splash of water to reach your desired consistency.
+
+5. **Season**: After simmering, stir in the lemon juice and add salt to taste. Adjust the seasoning if necessary.
+
+6. **Serve**: Serve the chickpea curry over a bed of cooked rice or quinoa for a hearty meal. You can also garnish it with fresh herbs if you like (coriander or parsley work well), but they are optional.
+
+### Enjoy Your Meal!
+This comforting chickpea curry is rich, creamy, and packed with flavors, all while being easy to prepare. Enjoy your delicious meal!",text/plain,I'm vegan and gluten-free and also hate vegetables. What can I eat?
+PASS,"The recipe for Sugar-Free Peanut Butter Cups adheres to the sugar-free dietary restriction. It uses natural peanut butter that is unsweetened, and a sugar-free sweetener such as erythritol or stevia, which are appropriate substitutes for sugar. The recipe avoids any high-sugar ingredients and relies on unsweetened cocoa powder and coconut oil, both of which do not contain added sugars. The preparation method does not introduce any sugar, ensuring the final product remains sugar-free.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm on a sugar-free diet but I want to make candy
+Dietary Restriction: sugar-free
+Recipe Response: For a delicious sugar-free candy option, I recommend making Sugar-Free Peanut Butter Cups. This recipe serves 2, so you can indulge without overdoing it!
+
+### Sugar-Free Peanut Butter Cups
+
+#### Ingredients:
+- 1/2 cup natural peanut butter (make sure it's unsweetened)
+- 1/4 cup coconut oil (melted)
+- 1/4 cup unsweetened cocoa powder
+- 1/4 cup sugar-free sweetener (e.g., erythritol or stevia, to taste)
+- 1 tsp vanilla extract
+- A pinch of salt
+
+#### Instructions:
+
+1. **Prepare Your Molds**: Start by preparing a silicone candy mold or a mini muffin tin. If you’re using a muffin tin, line it with cupcake liners for easier removal.
+
+2. **Make the Chocolate Mixture**: In a medium mixing bowl, combine the melted coconut oil, unsweetened cocoa powder, sugar-free sweetener, vanilla extract, and a pinch of salt. Stir well until the mixture is smooth and fully combined. This will be your chocolate coating.
+
+3. **Add the First Layer**: Pour a small amount (about a tablespoon) of the chocolate mixture into each mold or muffin cup, just enough to cover the bottom. Place the mold in the freezer for about 10-15 minutes until the chocolate sets.
+
+4. **Add Peanut Butter Filling**: While the chocolate base is setting, in another bowl, mix the natural peanut butter with a little bit of salt (just a pinch). Once the chocolate is firm, take the mold out from the freezer and spoon the peanut butter mixture on top of the chocolate layer, filling each mold about halfway or to your preferred taste.
+
+5. **Top with More Chocolate**: Cover the peanut butter layer with the remaining chocolate mixture, ensuring it completely seals the peanut butter. Tap the mold gently to remove any air bubbles and smooth the tops.
+
+6. **Freeze**: Place the mold back into the freezer for about 30 minutes or until completely set. 
+
+7. **Serve**: Once firm, carefully remove the peanut butter cups from the mold. They can be enjoyed immediately or stored in an airtight container in the fridge for later.
+
+### Enjoy your homemade Sugar-Free Peanut Butter Cups! 
+
+Perfectly sweet and chocolaty without the added sugar, this treat is sure to satisfy your candy cravings while sticking to your diet!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:28:03.198163+00:00,2025-08-04 00:28:16.083862+00:00,UNSET,,[],28e2eb618a4eeceb,b5a04638c351e5acfc28f071f7d878fe,26,text/plain,CHAIN,I'm on a sugar-free diet but I want to make candy,8,True,sugar-free,"For a delicious sugar-free candy option, I recommend making Sugar-Free Peanut Butter Cups. This recipe serves 2, so you can indulge without overdoing it!
+
+### Sugar-Free Peanut Butter Cups
+
+#### Ingredients:
+- 1/2 cup natural peanut butter (make sure it's unsweetened)
+- 1/4 cup coconut oil (melted)
+- 1/4 cup unsweetened cocoa powder
+- 1/4 cup sugar-free sweetener (e.g., erythritol or stevia, to taste)
+- 1 tsp vanilla extract
+- A pinch of salt
+
+#### Instructions:
+
+1. **Prepare Your Molds**: Start by preparing a silicone candy mold or a mini muffin tin. If you’re using a muffin tin, line it with cupcake liners for easier removal.
+
+2. **Make the Chocolate Mixture**: In a medium mixing bowl, combine the melted coconut oil, unsweetened cocoa powder, sugar-free sweetener, vanilla extract, and a pinch of salt. Stir well until the mixture is smooth and fully combined. This will be your chocolate coating.
+
+3. **Add the First Layer**: Pour a small amount (about a tablespoon) of the chocolate mixture into each mold or muffin cup, just enough to cover the bottom. Place the mold in the freezer for about 10-15 minutes until the chocolate sets.
+
+4. **Add Peanut Butter Filling**: While the chocolate base is setting, in another bowl, mix the natural peanut butter with a little bit of salt (just a pinch). Once the chocolate is firm, take the mold out from the freezer and spoon the peanut butter mixture on top of the chocolate layer, filling each mold about halfway or to your preferred taste.
+
+5. **Top with More Chocolate**: Cover the peanut butter layer with the remaining chocolate mixture, ensuring it completely seals the peanut butter. Tap the mold gently to remove any air bubbles and smooth the tops.
+
+6. **Freeze**: Place the mold back into the freezer for about 30 minutes or until completely set. 
+
+7. **Serve**: Once firm, carefully remove the peanut butter cups from the mold. They can be enjoyed immediately or stored in an airtight container in the fridge for later.
+
+### Enjoy your homemade Sugar-Free Peanut Butter Cups! 
+
+Perfectly sweet and chocolaty without the added sugar, this treat is sure to satisfy your candy cravings while sticking to your diet!",text/plain,I'm on a sugar-free diet but I want to make candy
+PASS,"The recipe for Lemon Garlic Butter Shrimp Pasta adheres to the pescatarian dietary restriction. Pescatarians consume fish and seafood but avoid other types of meat. This recipe includes shrimp, which is a seafood, and does not contain any other meat products. The use of butter and Parmesan cheese is acceptable within a pescatarian diet, as it does not restrict dairy products. All other ingredients, such as pasta, garlic, lemon, and parsley, are plant-based and do not conflict with the pescatarian guidelines.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I'm mostly vegetarian but I eat fish sometimes
+Dietary Restriction: pescatarian
+Recipe Response: Great! Here’s a delicious recipe for a Lemon Garlic Butter Shrimp Pasta that’s simple yet packed with flavor. This dish is perfect for two people.
+
+### Lemon Garlic Butter Shrimp Pasta
+
+#### Ingredients:
+- 8 oz spaghetti or linguine
+- 1 lb large shrimp, peeled and deveined
+- 3 tablespoons unsalted butter
+- 3 cloves garlic, minced
+- 1/2 teaspoon red pepper flakes (optional, for some heat)
+- 1 lemon (zested and juiced)
+- Salt and black pepper, to taste
+- Fresh parsley, chopped (for garnish)
+- Grated Parmesan cheese (optional)
+
+#### Instructions:
+
+1. **Cook the Pasta:**
+   - In a large pot of boiling salted water, cook the spaghetti or linguine according to package instructions until al dente. Once cooked, reserve about 1/2 cup of pasta water, then drain the pasta and set aside.
+
+2. **Prepare the Shrimp:**
+   - In a large skillet over medium heat, melt 2 tablespoons of butter. Once the butter is melted and bubbling, add the minced garlic and red pepper flakes (if using). Sauté for about 1 minute, until fragrant, being careful not to burn the garlic.
+
+3. **Cook the Shrimp:**
+   - Add the peeled and deveined shrimp to the skillet. Season with salt and black pepper. Cook for about 2-3 minutes on one side until they turn pink, then flip them over and cook for another 1-2 minutes, until fully cooked.
+
+4. **Combine the Ingredients:**
+   - Once the shrimp are cooked, add the cooked pasta to the skillet along with the reserved pasta water, the remaining 1 tablespoon of butter, lemon juice, and lemon zest. Toss everything together over medium heat until the pasta is well coated and heated through.
+
+5. **Taste and Adjust:**
+   - Taste the pasta and adjust the seasoning with additional salt and pepper if needed. If you like more tang, feel free to add extra lemon juice.
+
+6. **Serve:**
+   - Divide the pasta between two plates. Garnish with freshly chopped parsley and sprinkle with grated Parmesan cheese if desired.
+
+Enjoy your bright and flavorful Lemon Garlic Butter Shrimp Pasta, perfect for a delightful meal!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:29:08.209747+00:00,2025-08-04 00:29:15.891855+00:00,UNSET,,[],75ada3239943b208,d5fc84344413766c94ed87dc37a6ac6e,44,text/plain,CHAIN,I'm mostly vegetarian but I eat fish sometimes,2,True,pescatarian,"Great! Here’s a delicious recipe for a Lemon Garlic Butter Shrimp Pasta that’s simple yet packed with flavor. This dish is perfect for two people.
+
+### Lemon Garlic Butter Shrimp Pasta
+
+#### Ingredients:
+- 8 oz spaghetti or linguine
+- 1 lb large shrimp, peeled and deveined
+- 3 tablespoons unsalted butter
+- 3 cloves garlic, minced
+- 1/2 teaspoon red pepper flakes (optional, for some heat)
+- 1 lemon (zested and juiced)
+- Salt and black pepper, to taste
+- Fresh parsley, chopped (for garnish)
+- Grated Parmesan cheese (optional)
+
+#### Instructions:
+
+1. **Cook the Pasta:**
+   - In a large pot of boiling salted water, cook the spaghetti or linguine according to package instructions until al dente. Once cooked, reserve about 1/2 cup of pasta water, then drain the pasta and set aside.
+
+2. **Prepare the Shrimp:**
+   - In a large skillet over medium heat, melt 2 tablespoons of butter. Once the butter is melted and bubbling, add the minced garlic and red pepper flakes (if using). Sauté for about 1 minute, until fragrant, being careful not to burn the garlic.
+
+3. **Cook the Shrimp:**
+   - Add the peeled and deveined shrimp to the skillet. Season with salt and black pepper. Cook for about 2-3 minutes on one side until they turn pink, then flip them over and cook for another 1-2 minutes, until fully cooked.
+
+4. **Combine the Ingredients:**
+   - Once the shrimp are cooked, add the cooked pasta to the skillet along with the reserved pasta water, the remaining 1 tablespoon of butter, lemon juice, and lemon zest. Toss everything together over medium heat until the pasta is well coated and heated through.
+
+5. **Taste and Adjust:**
+   - Taste the pasta and adjust the seasoning with additional salt and pepper if needed. If you like more tang, feel free to add extra lemon juice.
+
+6. **Serve:**
+   - Divide the pasta between two plates. Garnish with freshly chopped parsley and sprinkle with grated Parmesan cheese if desired.
+
+Enjoy your bright and flavorful Lemon Garlic Butter Shrimp Pasta, perfect for a delightful meal!",text/plain,I'm mostly vegetarian but I eat fish sometimes
+FAIL,"The recipe provided is labeled as 'gluten-light,' which suggests it is not strictly gluten-free. The main ingredients, such as quinoa, spinach, bell peppers, and the optional cheese, are naturally gluten-free. However, the recipe does not explicitly ensure that all ingredients, such as vegetable broth, are certified gluten-free. Some vegetable broths may contain gluten as a thickener or flavoring agent. Additionally, the recipe does not address potential cross-contamination issues that are critical for a strict gluten-free diet. Since the dietary restriction specified is 'gluten-free,' the recipe does not fully adhere to this requirement, as it is only 'gluten-light.'",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: Gluten-light recipe - I'm not celiac just sensitive
+Dietary Restriction: gluten-free
+Recipe Response: Certainly! Here's a delicious and gluten-light recipe for **Quinoa and Spinach Stuffed Bell Peppers**. This dish is vibrant, nutritious, and perfect for two servings.
+
+### Quinoa and Spinach Stuffed Bell Peppers
+
+#### Ingredients:
+- 2 medium-sized bell peppers (any color)
+- 1 cup quinoa, rinsed
+- 2 cups vegetable broth (or water)
+- 2 cups fresh spinach, roughly chopped
+- 1 small onion, finely chopped
+- 2 cloves garlic, minced
+- 1 teaspoon olive oil
+- 1 teaspoon dried oregano
+- 1 teaspoon paprika
+- Salt and pepper to taste
+- 1 cup shredded cheese (optional, choose your favorite; for a lighter option, you can use feta)
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 375°F (190°C).
+
+2. **Prepare the Quinoa:**
+   In a medium saucepan, bring the vegetable broth (or water) to a boil. Add the rinsed quinoa, a pinch of salt, and stir. Reduce the heat to low, cover, and let it simmer for about 15 minutes or until all the liquid is absorbed and the quinoa is fluffy. Remove from heat and set aside.
+
+3. **Sauté the Vegetables:**
+   While the quinoa is cooking, heat the olive oil in a skillet over medium heat. Add the chopped onion and garlic, and sauté until the onion becomes translucent (about 3-5 minutes). Stir in the chopped spinach and continue to cook until the spinach wilts, which will take about 2 minutes.
+
+4. **Combine the Filling:**
+   In a large bowl, combine the cooked quinoa, sautéed onion, garlic, and spinach. Add the dried oregano, paprika, salt, and pepper to taste. If you're using cheese, mix half of it into the filling and reserve the rest for topping.
+
+5. **Prepare the Bell Peppers:**
+   While you’re mixing the filling, cut the tops off the bell peppers and remove the seeds. You can keep the tops for decoration if you like, or chop them for another use.
+
+6. **Stuff the Peppers:**
+   Spoon the quinoa mixture into each bell pepper, packing it lightly but not too tightly. Place the stuffed peppers upright in a baking dish.
+
+7. **Bake:**
+   If using, sprinkle the remaining cheese on top of each stuffed pepper. Cover the baking dish with aluminum foil to retain moisture and bake in the preheated oven for 30 minutes. Remove the foil and bake for an additional 10-15 minutes, or until the peppers are tender and the cheese is melted and bubbly.
+
+8. **Serve:**
+   Carefully remove the stuffed peppers from the oven and let them cool slightly before serving. Enjoy warm, garnished with fresh herbs if desired. 
+
+#### Serving Size:
+This recipe serves 2 people, with each person getting one stuffed pepper.
+
+Enjoy your healthy and gluten-light meal!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:29:22.215891+00:00,2025-08-04 00:29:34.700020+00:00,UNSET,,[],9a5d00e4094a4760,cb20f27eab2b5fade4dae1b44c282b37,48,text/plain,CHAIN,Gluten-light recipe - I'm not celiac just sensitive,1,True,gluten-free,"Certainly! Here's a delicious and gluten-light recipe for **Quinoa and Spinach Stuffed Bell Peppers**. This dish is vibrant, nutritious, and perfect for two servings.
+
+### Quinoa and Spinach Stuffed Bell Peppers
+
+#### Ingredients:
+- 2 medium-sized bell peppers (any color)
+- 1 cup quinoa, rinsed
+- 2 cups vegetable broth (or water)
+- 2 cups fresh spinach, roughly chopped
+- 1 small onion, finely chopped
+- 2 cloves garlic, minced
+- 1 teaspoon olive oil
+- 1 teaspoon dried oregano
+- 1 teaspoon paprika
+- Salt and pepper to taste
+- 1 cup shredded cheese (optional, choose your favorite; for a lighter option, you can use feta)
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 375°F (190°C).
+
+2. **Prepare the Quinoa:**
+   In a medium saucepan, bring the vegetable broth (or water) to a boil. Add the rinsed quinoa, a pinch of salt, and stir. Reduce the heat to low, cover, and let it simmer for about 15 minutes or until all the liquid is absorbed and the quinoa is fluffy. Remove from heat and set aside.
+
+3. **Sauté the Vegetables:**
+   While the quinoa is cooking, heat the olive oil in a skillet over medium heat. Add the chopped onion and garlic, and sauté until the onion becomes translucent (about 3-5 minutes). Stir in the chopped spinach and continue to cook until the spinach wilts, which will take about 2 minutes.
+
+4. **Combine the Filling:**
+   In a large bowl, combine the cooked quinoa, sautéed onion, garlic, and spinach. Add the dried oregano, paprika, salt, and pepper to taste. If you're using cheese, mix half of it into the filling and reserve the rest for topping.
+
+5. **Prepare the Bell Peppers:**
+   While you’re mixing the filling, cut the tops off the bell peppers and remove the seeds. You can keep the tops for decoration if you like, or chop them for another use.
+
+6. **Stuff the Peppers:**
+   Spoon the quinoa mixture into each bell pepper, packing it lightly but not too tightly. Place the stuffed peppers upright in a baking dish.
+
+7. **Bake:**
+   If using, sprinkle the remaining cheese on top of each stuffed pepper. Cover the baking dish with aluminum foil to retain moisture and bake in the preheated oven for 30 minutes. Remove the foil and bake for an additional 10-15 minutes, or until the peppers are tender and the cheese is melted and bubbly.
+
+8. **Serve:**
+   Carefully remove the stuffed peppers from the oven and let them cool slightly before serving. Enjoy warm, garnished with fresh herbs if desired. 
+
+#### Serving Size:
+This recipe serves 2 people, with each person getting one stuffed pepper.
+
+Enjoy your healthy and gluten-light meal!",text/plain,Gluten-light recipe - I'm not celiac just sensitive
+FAIL,"The recipe for Honey Garlic Chicken includes chicken breasts as the main ingredient, which is not allowed in a vegetarian diet. A vegetarian diet excludes all types of meat, including chicken. Therefore, this recipe does not adhere to the vegetarian dietary restriction.",HIGH,"You are an expert nutritionist and dietary specialist. Your task is to evaluate whether a recipe response properly adheres to the specified dietary restriction.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary restriction with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary restriction
+- Consider both explicit ingredients and cooking methods
+- Be strict but reasonable in your evaluation
+
+Please analyze the query, dietary restriction, and recipe response, then provide your evaluation.
+
+Query: I don't like vegetables but I want to eat healthy
+Dietary Restriction: vegetarian
+Recipe Response: I have a delicious recipe for **Honey Garlic Chicken** that is not only flavorful but also packed with protein, helping you maintain a healthy diet without relying on vegetables.
+
+### Honey Garlic Chicken Recipe
+
+**Servings:** 2
+
+#### Ingredients:
+- 2 boneless, skinless chicken breasts
+- Salt and pepper to taste
+- 1 tablespoon olive oil
+- 4 cloves garlic, minced
+- 1/3 cup honey
+- 1/4 cup soy sauce (low sodium if preferred)
+- 1 tablespoon apple cider vinegar (or rice vinegar)
+- Pinch of red pepper flakes (optional, for a bit of heat)
+- Fresh parsley or green onions for garnish (optional)
+
+#### Instructions:
+
+1. **Prepare the Chicken:**
+   Start by patting the chicken breasts dry with paper towels. This helps in achieving a nice sear. Season both sides with salt and pepper to taste.
+
+2. **Heat the Oil:**
+   In a large skillet, heat the olive oil over medium-high heat. Once the oil is hot and shimmering, add the chicken breasts to the skillet. 
+
+3. **Sear the Chicken:**
+   Sear the chicken for about 5-6 minutes on one side without moving it, allowing a golden crust to form. Flip the chicken and sear the other side for another 5-6 minutes, until cooked through and the internal temperature reaches 165°F (75°C). Once done, remove the chicken from the skillet and set it aside.
+
+4. **Prepare the Sauce:**
+   In the same skillet, add the minced garlic and sauté for about 30 seconds until fragrant. Be careful not to burn it. Lower the heat to medium, then add in the honey, soy sauce, apple cider vinegar, and red pepper flakes if using. Stir the mixture well and bring it to a gentle simmer.
+
+5. **Glaze the Chicken:**
+   Return the seared chicken breasts to the skillet, turning them to coat with the sauce. Let it simmer in the sauce for about 2-3 minutes, allowing the flavors to meld and the sauce to thicken slightly.
+
+6. **Serve:**
+   Once the chicken is well coated and the sauce is sticky, remove it from heat. You can slice the chicken or serve it whole. Drizzle any remaining sauce from the skillet over the top. For an optional garnish, sprinkle with chopped fresh parsley or green onions.
+
+7. **Enjoy!**
+   Serve the honey garlic chicken alongside your choice of side dish, such as rice or quinoa, to absorb the delicious sauce. This will make for a hearty and delightful meal!
+
+This recipe is simple, quick, and full of flavor, making it a great healthy option without relying on vegetables. Enjoy your cooking!
+
+Return your response in this exact format:
+""explanation"": ""Detailed explanation of your evaluation, citing specific ingredients or methods"",
+""label"": ""PASS"" or ""FAIL"",
+""confidence"": ""HIGH"", ""MEDIUM"", or ""LOW""
+",Query_Information,CHAIN,,2025-08-04 00:28:51.818173+00:00,2025-08-04 00:29:03.263311+00:00,UNSET,,[],10d1b6be0840ba67,320fb49e8d1970b923e631ee7d70b487,38,text/plain,CHAIN,I don't like vegetables but I want to eat healthy,10,True,vegetarian,"I have a delicious recipe for **Honey Garlic Chicken** that is not only flavorful but also packed with protein, helping you maintain a healthy diet without relying on vegetables.
+
+### Honey Garlic Chicken Recipe
+
+**Servings:** 2
+
+#### Ingredients:
+- 2 boneless, skinless chicken breasts
+- Salt and pepper to taste
+- 1 tablespoon olive oil
+- 4 cloves garlic, minced
+- 1/3 cup honey
+- 1/4 cup soy sauce (low sodium if preferred)
+- 1 tablespoon apple cider vinegar (or rice vinegar)
+- Pinch of red pepper flakes (optional, for a bit of heat)
+- Fresh parsley or green onions for garnish (optional)
+
+#### Instructions:
+
+1. **Prepare the Chicken:**
+   Start by patting the chicken breasts dry with paper towels. This helps in achieving a nice sear. Season both sides with salt and pepper to taste.
+
+2. **Heat the Oil:**
+   In a large skillet, heat the olive oil over medium-high heat. Once the oil is hot and shimmering, add the chicken breasts to the skillet. 
+
+3. **Sear the Chicken:**
+   Sear the chicken for about 5-6 minutes on one side without moving it, allowing a golden crust to form. Flip the chicken and sear the other side for another 5-6 minutes, until cooked through and the internal temperature reaches 165°F (75°C). Once done, remove the chicken from the skillet and set it aside.
+
+4. **Prepare the Sauce:**
+   In the same skillet, add the minced garlic and sauté for about 30 seconds until fragrant. Be careful not to burn it. Lower the heat to medium, then add in the honey, soy sauce, apple cider vinegar, and red pepper flakes if using. Stir the mixture well and bring it to a gentle simmer.
+
+5. **Glaze the Chicken:**
+   Return the seared chicken breasts to the skillet, turning them to coat with the sauce. Let it simmer in the sauce for about 2-3 minutes, allowing the flavors to meld and the sauce to thicken slightly.
+
+6. **Serve:**
+   Once the chicken is well coated and the sauce is sticky, remove it from heat. You can slice the chicken or serve it whole. Drizzle any remaining sauce from the skillet over the top. For an optional garnish, sprinkle with chopped fresh parsley or green onions.
+
+7. **Enjoy!**
+   Serve the honey garlic chicken alongside your choice of side dish, such as rice or quinoa, to absorb the delicious sauce. This will make for a hearty and delightful meal!
+
+This recipe is simple, quick, and full of flavor, making it a great healthy option without relying on vegetables. Enjoy your cooking!",text/plain,I don't like vegetables but I want to eat healthy

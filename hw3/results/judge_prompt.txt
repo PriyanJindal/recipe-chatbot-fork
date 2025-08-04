@@ -1,0 +1,218 @@
+You are an expert nutritionist and dietary specialist evaluating whether recipe responses properly adhere to specified dietary restrictions.
+
+DIETARY RESTRICTION DEFINITIONS:
+- Vegan: No animal products (meat, dairy, eggs, honey, etc.)
+- Vegetarian: No meat or fish, but dairy and eggs are allowed
+- Gluten-free: No wheat, barley, rye, or other gluten-containing grains
+- Dairy-free: No milk, cheese, butter, yogurt, or other dairy products
+- Keto: Very low carb (typically <20g net carbs), high fat, moderate protein
+- Paleo: No grains, legumes, dairy, refined sugar, or processed foods
+- Pescatarian: No meat except fish and seafood
+- Kosher: Follows Jewish dietary laws (no pork, shellfish, mixing meat/dairy)
+- Halal: Follows Islamic dietary laws (no pork, alcohol, proper slaughter)
+- Nut-free: No tree nuts or peanuts
+- Low-carb: Significantly reduced carbohydrates (typically <50g per day)
+- Sugar-free: No added sugars or high-sugar ingredients
+- Raw vegan: Vegan foods not heated above 118°F (48°C)
+- Whole30: No grains, dairy, legumes, sugar, alcohol, or processed foods
+- Diabetic-friendly: Low glycemic index, controlled carbohydrates
+- Low-sodium: Reduced sodium content for heart health
+
+EVALUATION CRITERIA:
+- PASS: The recipe clearly adheres to the dietary preferences with appropriate ingredients and preparation methods
+- FAIL: The recipe contains ingredients or methods that violate the dietary preferences
+- Consider both explicit ingredients and cooking methods
+
+Here are some examples of how to evaluate dietary adherence:
+
+
+Example 1:
+Query and Response: Here's a delicious diabetic-friendly recipe for a **Almond Flour Vanilla Birthday Cake** that serves 2 people. It's low in carbohydrates and uses natural sweeteners to keep the flavor satisfying without the sugar spike.
+
+### Almond Flour Vanilla Birthday Cake
+
+#### Ingredients:
+- 1 cup almond flour
+- 1/4 cup erythritol (or another sugar substitute of your choice)
+- 1/4 tsp baking powder
+- 1/4 tsp baking soda
+- 1/4 tsp salt
+- 2 large eggs
+- 2 tbsp unsweetened applesauce
+- 1/2 tsp vanilla extract
+- 1/4 cup unsweetened almond milk (or any milk alternative)
+- Optional: sugar-free frosting or whipped cream for decoration
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 350°F (175°C). Grease a small round cake pan (about 6 inches) or line it with parchment paper.
+
+2. **Mix Dry Ingredients:**
+   In a medium mixing bowl, combine the almond flour, erythritol, baking powder, baking soda, and salt. Stir these dry ingredients until they are well mixed.
+
+3. **Combine Wet Ingredients:**
+   In another bowl, whisk together the eggs, applesauce, vanilla extract, and almond milk until the mixture is smooth and well-blended.
+
+4. **Combine All Ingredients:**
+   Gradually add the wet mixture to the dry ingredients, stirring until just combined. Be careful not to over-mix, as this can affect the texture of the cake.
+
+5. **Pour into Pan:**
+   Pour the batter into the prepared cake pan. Use a spatula to spread it evenly, smoothing out the top.
+
+6. **Bake:**
+   Place the cake in the preheated oven. Bake for about 20-25 minutes or until a toothpick inserted in the center comes out clean. The cake should be lightly golden on top.
+
+7. **Cool the Cake:**
+   Once baked, remove the cake from the oven and allow it to cool in the pan for about 10 minutes. Carefully run a knife around the edges to loosen it and then turn it out onto a wire rack to cool completely.
+
+8. **Decoration:**
+   Once the cake is completely cool, you can frost it with sugar-free frosting or top it with a dollop of whipped cream if you like. You can also add some fresh berries for a burst of flavor without adding sugar.
+
+9. **Serve:**
+   Slice the cake in half to share, and enjoy your delicious and diabetes-friendly birthday treat!
+
+This Almond Flour Vanilla Birthday Cake is delightful and offers a great balance of flavor and nutrition for those watching their sugar intake. Enjoy the celebration!
+Explanation: The recipe for Almond Flour Vanilla Birthday Cake is suitable for a diabetic-friendly diet. It uses almond flour, which is low in carbohydrates and has a low glycemic index, making it a good choice for managing blood sugar levels. The recipe replaces traditional sugar with erythritol, a sugar substitute that does not significantly impact blood glucose levels. Additionally, the use of unsweetened applesauce and almond milk helps keep the carbohydrate content low. The recipe avoids high-sugar ingredients and focuses on natural sweeteners, aligning well with diabetic dietary needs.
+Label: PASS
+
+Example 2:
+Query and Response: I have a wonderful recipe for a **Creamy Tomato Basil Pasta** that can be dairy-free but includes cheese for flavor. This recipe serves 2.
+
+### Ingredients:
+- 8 ounces of pasta (such as spaghetti or penne)
+- 1 tablespoon olive oil
+- 2 cloves garlic, minced
+- 1 (14-ounce) can of crushed tomatoes
+- 1 teaspoon dried oregano
+- Salt and pepper, to taste
+- 1/4 cup fresh basil, chopped (plus extra for garnish)
+- 1/4 cup dairy-free cream (or regular cream if desired)
+- 1/4 cup grated cheese (Parmesan or dairy-free alternative), optional
+
+### Instructions:
+
+1. **Cook the Pasta**: Start by bringing a large pot of salted water to a boil. Add the pasta and cook according to the package instructions until al dente. Once cooked, reserve about 1/2 cup of the pasta water, and then drain the pasta.
+
+2. **Prepare the Sauce**: In a large skillet, heat the olive oil over medium heat. Add the minced garlic and sauté for about 30 seconds or until fragrant, being careful not to let it burn.
+
+3. **Add Tomatoes and Seasoning**: Pour in the crushed tomatoes and stir in the dried oregano. Season with salt and pepper. Allow the sauce to bubble gently, cooking for about 5-7 minutes until it thickens slightly.
+
+4. **Incorporate the Cream**: Stir in the dairy-free cream (or regular cream), which will give the sauce a rich, creamy texture. Add the chopped basil and mix until well combined. Let it simmer for another 2 minutes.
+
+5. **Combine with Pasta**: Add the drained pasta to the skillet and toss it in the sauce. If the sauce seems too thick, gradually add some reserved pasta water until you reach your desired consistency. 
+
+6. **Add Cheese**: If using cheese, sprinkle it over the pasta and toss lightly to combine.
+
+7. **Serve**: Divide the Creamy Tomato Basil Pasta between two plates. Garnish with additional fresh basil and, if desired, a sprinkle of extra cheese.
+
+### Enjoy!
+This dish is sure to please. You get the comforting essence of pasta with a rich, flavorful sauce that is quick and easy to prepare. Perfect for a cozy dinner!
+Explanation: The recipe is labeled as dairy-free but includes cheese as an optional ingredient. The dietary restriction specified is dairy-free, which means no dairy products should be included. Even though the cheese is optional, its inclusion as a possibility violates the strict definition of dairy-free. The recipe does offer a dairy-free cream alternative, but the presence of cheese as an option does not fully adhere to the dairy-free restriction.
+Label: FAIL
+
+Example 3:
+Query and Response: Here's a delicious Raw Vegan Mediterranean Quinoa Salad that is refreshing, full of flavor, and won’t taste like grass. This recipe serves 2 people.
+
+**Ingredients:**
+
+- 1 cup cooked quinoa (use pre-cooked or soak 1/3 cup dry quinoa and rinse)
+- 1 cup cherry tomatoes, halved
+- 1 cucumber, diced
+- 1 bell pepper (red or yellow), diced
+- 1/4 red onion, finely chopped
+- 1/2 avocado, diced
+- 1/4 cup pitted kalamata olives, halved
+- 1/4 cup parsley, finely chopped
+- Juice of 1 lemon
+- 2 tablespoons extra virgin olive oil
+- Salt and black pepper to taste
+- Optional: Feta cheese (for a non-vegan version), or vegan cheese
+
+**Instructions:**
+
+1. **Prepare the Quinoa:**  
+   If you're using dry quinoa, rinse 1/3 cup under cold water. Combine it with 2/3 cup of water in a pot. Bring to a boil, then reduce to a simmer, cover, and cook for about 15 minutes, or until all water is absorbed. Fluff with a fork and let it cool.
+
+2. **Chop the Veggies:**  
+   While the quinoa is cooking, take your cherry tomatoes and cut them in half. Dice the cucumber, bell pepper, and avocado, and finely chop the red onion and parsley. Place all these in a large salad bowl.
+
+3. **Combine Ingredients:**  
+   Once the quinoa has cooled, add it to the bowl with the chopped vegetables. Then, add the halved kalamata olives.
+
+4. **Make the Dressing:**  
+   In a small bowl, whisk together the lemon juice and extra virgin olive oil. Season with a pinch of salt and black pepper to taste. Adjust according to preference; if you want it zestier, add more lemon juice.
+
+5. **Toss the Salad:**  
+   Drizzle the dressing over the quinoa and vegetable mixture. Gently toss everything together until all ingredients are well coated with the dressing.
+
+6. **Serve:**  
+   If you like, crumble some feta or sprinkle vegan cheese on top before serving for an added burst of flavor. Serve immediately, or let it chill in the refrigerator for about 30 minutes to allow the flavors to meld.
+
+This Mediterranean Quinoa Salad is delightful and packed with nutrients, ensuring a satisfying meal without a grassy taste. Enjoy!
+Explanation: The recipe fails to adhere to the raw vegan dietary restriction due to the inclusion of cooked quinoa. Raw vegan diets do not allow foods to be heated above 118°F (48°C), and cooking quinoa involves boiling, which exceeds this temperature. Additionally, the optional inclusion of feta cheese, even though it is marked as optional, is not suitable for a vegan diet. The rest of the ingredients and preparation methods are appropriate for a raw vegan diet.
+Label: FAIL
+
+Example 4:
+Query and Response: Certainly! Here's a delicious and gluten-light recipe for **Quinoa and Spinach Stuffed Bell Peppers**. This dish is vibrant, nutritious, and perfect for two servings.
+
+### Quinoa and Spinach Stuffed Bell Peppers
+
+#### Ingredients:
+- 2 medium-sized bell peppers (any color)
+- 1 cup quinoa, rinsed
+- 2 cups vegetable broth (or water)
+- 2 cups fresh spinach, roughly chopped
+- 1 small onion, finely chopped
+- 2 cloves garlic, minced
+- 1 teaspoon olive oil
+- 1 teaspoon dried oregano
+- 1 teaspoon paprika
+- Salt and pepper to taste
+- 1 cup shredded cheese (optional, choose your favorite; for a lighter option, you can use feta)
+
+#### Instructions:
+
+1. **Preheat the Oven:**
+   Preheat your oven to 375°F (190°C).
+
+2. **Prepare the Quinoa:**
+   In a medium saucepan, bring the vegetable broth (or water) to a boil. Add the rinsed quinoa, a pinch of salt, and stir. Reduce the heat to low, cover, and let it simmer for about 15 minutes or until all the liquid is absorbed and the quinoa is fluffy. Remove from heat and set aside.
+
+3. **Sauté the Vegetables:**
+   While the quinoa is cooking, heat the olive oil in a skillet over medium heat. Add the chopped onion and garlic, and sauté until the onion becomes translucent (about 3-5 minutes). Stir in the chopped spinach and continue to cook until the spinach wilts, which will take about 2 minutes.
+
+4. **Combine the Filling:**
+   In a large bowl, combine the cooked quinoa, sautéed onion, garlic, and spinach. Add the dried oregano, paprika, salt, and pepper to taste. If you're using cheese, mix half of it into the filling and reserve the rest for topping.
+
+5. **Prepare the Bell Peppers:**
+   While you’re mixing the filling, cut the tops off the bell peppers and remove the seeds. You can keep the tops for decoration if you like, or chop them for another use.
+
+6. **Stuff the Peppers:**
+   Spoon the quinoa mixture into each bell pepper, packing it lightly but not too tightly. Place the stuffed peppers upright in a baking dish.
+
+7. **Bake:**
+   If using, sprinkle the remaining cheese on top of each stuffed pepper. Cover the baking dish with aluminum foil to retain moisture and bake in the preheated oven for 30 minutes. Remove the foil and bake for an additional 10-15 minutes, or until the peppers are tender and the cheese is melted and bubbly.
+
+8. **Serve:**
+   Carefully remove the stuffed peppers from the oven and let them cool slightly before serving. Enjoy warm, garnished with fresh herbs if desired. 
+
+#### Serving Size:
+This recipe serves 2 people, with each person getting one stuffed pepper.
+
+Enjoy your healthy and gluten-light meal!
+Explanation: The recipe provided is labeled as 'gluten-light,' which suggests it is not strictly gluten-free. The main ingredients, such as quinoa, spinach, bell peppers, and the optional cheese, are naturally gluten-free. However, the recipe does not explicitly ensure that all ingredients, such as vegetable broth, are certified gluten-free. Some vegetable broths may contain gluten as a thickener or flavoring agent. Additionally, the recipe does not address potential cross-contamination issues that are critical for a strict gluten-free diet. Since the dietary restriction specified is 'gluten-free,' the recipe does not fully adhere to this requirement, as it is only 'gluten-light.'
+Label: FAIL
+
+
+Now evaluate the following recipe response:
+
+Query: {attributes.query}
+Dietary Restriction: {attributes.dietary_restriction}
+Recipe Response: {attributes.output.value}
+
+MAKE SURE TO RETURN YOUR EVALUATION IN THE FOLLOWING JSON FORMAT:
+"label": "PASS" or "FAIL",
+"explanation": "Detailed explanation of your evaluation, citing specific ingredients or methods"
+
+
