@@ -33,7 +33,7 @@ def load_traces_from_phoenix() -> pd.DataFrame:
             "span_kind == 'CHAIN'"
         )
         
-        client = px.Client(endpoint=os.getenv("PHOENIX_COLLECTOR_ENDPOINT"))
+        client = px.Client()
         trace_df = client.query_spans(query, project_name='recipe-agent')
         
         if trace_df.empty:
@@ -81,7 +81,7 @@ def run_judge_on_traces(judge_prompt: str, traces_df: pd.DataFrame) -> Tuple[Lis
     predictions = llm_generate(
         dataframe=traces_df,
         template=judge_prompt,
-        model=OpenAIModel(model='gpt-4.1-nano', api_key=os.getenv("OPENAI_API_KEY")),
+        model=OpenAIModel(model='gpt-4o', api_key=os.getenv("OPENAI_API_KEY")),
         verbose=True,
         output_parser=output_parser,
         include_prompt=True,
@@ -153,7 +153,7 @@ def save_final_results(theta_hat: float, lower_bound: float, upper_bound: float,
         }
     }
     
-    results_path = results_dir / "final_evaluation.json"
+    results_path = results_dir + "/final_evaluation.json"
     with open(results_path, 'w') as f:
         json.dump(results, f, indent=2)
     console.print(f"[green]Saved final results to {results_path}")
@@ -185,7 +185,7 @@ def main():
     results_dir = hw3_dir / "results"
     
     # Load judge prompt
-    prompt_path = results_dir / "judge_prompt.txt"
+    prompt_path = results_dir + "/judge_prompt.txt"
     if not prompt_path.exists():
         console.print("[red]Error: Judge prompt not found!")
         console.print("[yellow]Please run develop_judge.py first.")
@@ -195,7 +195,7 @@ def main():
     console.print("[green]Loaded judge prompt")
     
     # Load test set performance data for judgy
-    judgy_path = results_dir / "judgy_test_data.json"
+    judgy_path = results_dir + "/judgy_test_data.json"
     if not judgy_path.exists():
         console.print("[red]Error: Test set performance data not found!")
         console.print("[yellow]Please run evaluate_judge.py first.")

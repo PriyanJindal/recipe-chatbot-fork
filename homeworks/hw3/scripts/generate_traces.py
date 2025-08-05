@@ -9,7 +9,6 @@ import sys
 import pandas as pd
 from pathlib import Path
 from typing import List, Dict, Any
-from rich.console import Console
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Set up Phoenix tracing
@@ -21,11 +20,12 @@ tracer = tracer_provider.get_tracer(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from backend.utils import get_agent_response
 
 MAX_WORKERS = 32
-
-console = Console()
 
 def load_dietary_queries(csv_path: str) -> List[Dict[str, Any]]:
     """Load dietary preference queries from CSV file."""
@@ -57,8 +57,8 @@ def generate_trace_with_id(args: tuple):
             return span
         
         except Exception as e:
-            console.print(f"[red]Error generating trace for query: {query}")
-            console.print(f"[red]Error: {str(e)}")
+            print(f"Error generating trace for query: {query}")
+            print(f"Error: {str(e)}")
             span.set_attribute("error", str(e))
             span.set_attribute("success", False)
             return span
@@ -86,13 +86,13 @@ def generate_multiple_traces_per_query(queries: List[Dict[str, Any]],
             trace = future.result()
             all_traces.append(trace)
     
-    console.print(f"[green]Completed parallel generation of {len(all_traces)} traces")
+    print(f"Completed parallel generation of {len(all_traces)} traces")
     return all_traces
 
 def main():
     """Main function to generate Recipe Bot traces."""
-    console.print("[bold blue]Recipe Bot Trace Generation")
-    console.print("=" * 50)
+    print("[bold blue]Recipe Bot Trace Generation")
+    print("=" * 50)
     
     # Set up paths
     script_dir = Path(__file__).parent
@@ -102,28 +102,28 @@ def main():
     # Load dietary queries
     queries_path = data_dir / "dietary_queries.csv"
     if not queries_path.exists():
-        console.print(f"[red]Error: {queries_path} not found!")
+        print(f"Error: {queries_path} not found!")
         return
     
     queries = load_dietary_queries(str(queries_path))
-    console.print(f"[green]Loaded {len(queries)} dietary queries")
+    print(f"Loaded {len(queries)} dietary queries")
 
     
     # Generate traces (40 traces per query)
-    console.print("[yellow]Generating traces... This may take a while as we are making many LLM calls.")
+    print("Generating traces... This may take a while as we are making many LLM calls.")
     traces = generate_multiple_traces_per_query(queries, traces_per_query=40)
     
     # Filter successful traces
     successful_traces = [t for t in traces if t.attributes["success"]]
     failed_traces = [t for t in traces if not t.attributes["success"]]
     
-    console.print(f"[green]Successfully generated {len(successful_traces)} traces")
+    print(f"Successfully generated {len(successful_traces)} traces")
     if failed_traces:
-        console.print(f"[yellow]Failed to generate {len(failed_traces)} traces")
+        print(f"Failed to generate {len(failed_traces)} traces")
     
     # Print summary statistics
-    console.print("\n[bold]Summary Statistics:")
-    console.print(f"Total traces generated: {len(successful_traces)}")
+    print("\n[bold]Summary Statistics:")
+    print(f"Total traces generated: {len(successful_traces)}")
     
     # Count by dietary restriction
     restriction_counts = {}
@@ -131,9 +131,9 @@ def main():
         restriction = trace.attributes["dietary_restriction"]
         restriction_counts[restriction] = restriction_counts.get(restriction, 0) + 1
     
-    console.print("\nTraces per dietary restriction:")
+    print("\nTraces per dietary restriction:")
     for restriction, count in sorted(restriction_counts.items()):
-        console.print(f"  {restriction}: {count}")
+        print(f"  {restriction}: {count}")
 
 if __name__ == "__main__":
     main() 

@@ -8,11 +8,8 @@ import pandas as pd
 import random
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
-from rich.console import Console
 from sklearn.model_selection import train_test_split
 import phoenix as px
-
-console = Console()
 
 phoenix_client = px.Client()
 
@@ -75,25 +72,25 @@ def print_split_statistics(train_df: pd.DataFrame,
     
     total_traces = len(train_df) + len(dev_df) + len(test_df)
     
-    console.print("\n[bold]Data Split Statistics:")
-    console.print(f"Total traces: {total_traces}")
-    console.print(f"Train: {len(train_df)} ({len(train_df)/total_traces:.1%})")
-    console.print(f"Dev: {len(dev_df)} ({len(dev_df)/total_traces:.1%})")
-    console.print(f"Test: {len(test_df)} ({len(test_df)/total_traces:.1%})")
+    print("\n[bold]Data Split Statistics:")
+    print(f"Total traces: {total_traces}")
+    print(f"Train: {len(train_df)} ({len(train_df)/total_traces:.1%})")
+    print(f"Dev: {len(dev_df)} ({len(dev_df)/total_traces:.1%})")
+    print(f"Test: {len(test_df)} ({len(test_df)/total_traces:.1%})")
     
     # Label distribution
-    console.print("\n[bold]Label Distribution:")
+    print("\n[bold]Label Distribution:")
     for split_name, split_df in [("Train", train_df), ("Dev", dev_df), ("Test", test_df)]:
         label_counts = get_label_counts(split_df)
-        console.print(f"{split_name}:")
+        print(f"{split_name}:")
         for label, count in sorted(label_counts.items()):
-            console.print(f"  {label}: {count} ({count/len(split_df):.1%})")
+            print(f"  {label}: {count} ({count/len(split_df):.1%})")
     
     # Dietary restriction distribution (for train set)
-    console.print("\n[bold]Dietary Restrictions in Train Set:")
+    print("\n[bold]Dietary Restrictions in Train Set:")
     restriction_counts = get_restriction_counts(split_df)
     for restriction, count in sorted(restriction_counts.items()):
-        console.print(f"  {restriction}: {count}")
+        print(f"  {restriction}: {count}")
 
 def validate_splits(train_df: pd.DataFrame, 
                    dev_df: pd.DataFrame, 
@@ -104,22 +101,22 @@ def validate_splits(train_df: pd.DataFrame,
     for split_name, split_df in [("Train", train_df), ("Dev", dev_df), ("Test", test_df)]:
         labels = set(split_df["ground_truth_label"])
         if len(labels) < 2:
-            console.print(f"[red]Warning: {split_name} set only has labels: {labels}")
+            print(f"Warning: {split_name} set only has labels: {labels}")
             return False
     
     # Check that train set has reasonable diversity
     train_restrictions = set(train_df["attributes.dietary_restriction"])
     if len(train_restrictions) < 3:
-        console.print(f"[red]Warning: Train set only has {len(train_restrictions)} dietary restrictions")
+        print(f"Warning: Train set only has {len(train_restrictions)} dietary restrictions")
         return False
     
-    console.print("[green]Data splits validation passed!")
+    print("Data splits validation passed!")
     return True
 
 def main():
     """Main function to split labeled data."""
-    console.print("[bold blue]Data Splitting for LLM Judge Development")
-    console.print("=" * 50)
+    print("[bold blue]Data Splitting for LLM Judge Development")
+    print("=" * 50)
     
     # Set up paths
     script_dir = Path(__file__).parent
@@ -129,15 +126,15 @@ def main():
     # Load labeled traces
     labeled_path = data_dir / "labeled_traces.csv"
     if not labeled_path.exists():
-        console.print(f"[red]Error: {labeled_path} not found!")
-        console.print("[yellow]Please run label_data.py first.")
+        print(f"Error: {labeled_path} not found!")
+        print("Please run label_data.py first.")
         return
     
     traces = load_labeled_traces(str(labeled_path))
-    console.print(f"[green]Loaded {len(traces)} labeled traces")
+    print(f"Loaded {len(traces)} labeled traces")
     
     # Split the data
-    console.print("[yellow]Splitting data into train/dev/test sets...")
+    print("Splitting data into train/dev/test sets...")
     train_df, dev_df, test_df = stratified_split(
         traces, 
         train_ratio=0.15,  # Small train set for few-shot examples
@@ -147,7 +144,7 @@ def main():
     
     # Validate splits
     if not validate_splits(train_df, dev_df, test_df):
-        console.print("[red]Data split validation failed!")
+        print("Data split validation failed!")
         return
     
     # Save splits locally
@@ -161,11 +158,11 @@ def main():
     # Print statistics
     print_split_statistics(train_df, dev_df, test_df)
     
-    console.print("\n[bold green]Data splitting completed successfully!")
-    console.print("\n[bold]Split Rationale:")
-    console.print("• Train (15%): Small set for few-shot examples in judge prompt")
-    console.print("• Dev (40%): Large set for iterative judge development and tuning")
-    console.print("• Test (45%): Large set for final unbiased evaluation of judge performance")
+    print("\n[bold green]Data splitting completed successfully!")
+    print("\n[bold]Split Rationale:")
+    print("• Train (15%): Small set for few-shot examples in judge prompt")
+    print("• Dev (40%): Large set for iterative judge development and tuning")
+    print("• Test (45%): Large set for final unbiased evaluation of judge performance")
 
 if __name__ == "__main__":
     main() 

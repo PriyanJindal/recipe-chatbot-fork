@@ -122,18 +122,18 @@ MAKE SURE TO RETURN YOUR EVALUATION IN THE FOLLOWING JSON FORMAT:
     
     return base_prompt
 
-def generate_eval_prompt(input, metadata, base_prompt):
+def generate_eval_prompt(input, metadata, expected, base_prompt):
     formatted_prompt = base_prompt.replace("{attributes.query}", str(input.get("attributes.query")))
     formatted_prompt = formatted_prompt.replace("{attributes.dietary_restriction}", str(metadata.get("attributes.dietary_restriction")))
-    formatted_prompt = formatted_prompt.replace("{attributes.output}", str(metadata.get("attributes.output.value")))
+    formatted_prompt = formatted_prompt.replace("{attributes.output.value}", str(expected.get("attributes.output.value")))
     return formatted_prompt
 
-def create_task_function(base_prompt):
+def create_task_function(base_prompt, model):
     """Create a task function that uses the provided base prompt."""
-    def task(input, metadata):
-        eval_prompt = generate_eval_prompt(input, metadata, base_prompt)
+    def task(input, expected, metadata):
+        eval_prompt = generate_eval_prompt(input, metadata, expected, base_prompt)
         completion = litellm.completion(
-            model="gpt-4.1-nano",
+            model=model,
             messages=[{"role": "user", "content": eval_prompt}],
             response_format={"type": "json_object"},
         )
@@ -141,29 +141,29 @@ def create_task_function(base_prompt):
     
     return task
 
-def eval_tp(metadata, output):
+def eval_tp(expected, output):
     label = output.get("label")
-    tp = (metadata["ground_truth_label"] == "PASS") & (label.lower() == "pass")
+    tp = (expected["ground_truth_label"] == "PASS") & (label.lower() == "pass")
     return tp
 
-def eval_tn(metadata, output):
+def eval_tn(expected, output):
     label = output.get("label")
-    tn = (metadata["ground_truth_label"] == "FAIL") & (label.lower() == "fail")
+    tn = (expected["ground_truth_label"] == "FAIL") & (label.lower() == "fail")
     return tn
 
-def eval_fp(metadata, output):
+def eval_fp(expected, output):
     label = output.get("label")
-    fp = (metadata["ground_truth_label"] == "FAIL") & (label.lower() == "pass")
+    fp = (expected["ground_truth_label"] == "FAIL") & (label.lower() == "pass")
     return fp
 
-def eval_fn(metadata, output):
+def eval_fn(expected, output):
     label = output.get("label")
-    fn = (metadata["ground_truth_label"] == "PASS") & (label.lower() == "fail")
+    fn = (expected["ground_truth_label"] == "PASS") & (label.lower() == "fail")
     return fn
 
-def accuracy(metadata, output):
+def accuracy(expected, output):
     label = output.get("label")
-    accuracy = (metadata["ground_truth_label"].lower() == label.lower())
+    accuracy = (expected["ground_truth_label"].lower() == label.lower())
     return accuracy
 
 def save_judge_prompt(prompt: str, output_path: str) -> None:
@@ -172,72 +172,14 @@ def save_judge_prompt(prompt: str, output_path: str) -> None:
         f.write(prompt)
     console.print(f"[green]Saved judge prompt to {output_path}")
 
-def main():
-    """Main function to develop the LLM judge."""
-
-    # Set up Phoenix client
-    phoenix_client = px.Client()
-
-    # Load data splits
-    script_dir = Path(__file__).parent
-    hw3_dir = script_dir.parent
-    data_dir = hw3_dir / "data"
-
-    train_path = data_dir / "train_set.csv"
-    dev_path = data_dir / "dev_set.csv"
-    test_path = data_dir / "test_set.csv"
-
-    train_df = load_data_split(str(train_path))
-    dev_df = load_data_split(str(dev_path))
-
-    console.print("[bold blue]Loading data splits...")
-    console.print("=" * 50)
-
-    # Upload the data splits to Phoenix
-    train_dataset = phoenix_client.upload_dataset(
-        dataframe=train_df,
-        dataset_name="train_set",
-        input_keys=["attributes.query"],
-        output_keys=[],
-        metadata_keys=["attributes.output.value", "ground_truth_label", "ground_truth_explanation", "attributes.dietary_restriction", "attributes.trace_num"],
-    )
-    
-    dev_dataset = phoenix_client.upload_dataset(
-        dataframe=dev_df,
-        dataset_name="dev_set",
-        input_keys=["attributes.query"],
-        output_keys=[],
-        metadata_keys=["attributes.output.value", "ground_truth_label", "ground_truth_explanation", "attributes.dietary_restriction", "attributes.trace_num"],
-    )
-
-    console.print("[bold blue]LLM Judge Development")
-    console.print("=" * 50)
-
-    # Select few-shot examples randomly
-    few_shot_examples = select_few_shot_examples(train_df)
-    
-    if not few_shot_examples:
-        console.print("[red]Failed to select few-shot examples!")
-        return
-    
-    # Create judge prompt
-    judge_prompt = create_judge_prompt(few_shot_examples)
-
-    print("judge_prompt", judge_prompt)
-
-    # Create task function with the judge prompt
-    task = create_task_function(judge_prompt)
-
-    # Evaluate judge on dev set
-    console.print("[yellow]Evaluating judge on dev set...")
-    experiment = run_experiment(dataset=dev_dataset, task=task, evaluators=[eval_tp, eval_tn, eval_fp, eval_fn, accuracy], concurrency=3)
-    experiment_id = experiment.id
-
+def retrieve_results(experiment_id: str) -> None:
     base_url = "http://localhost:6006"
     url = f"{base_url}/v1/experiments/{experiment_id}/json"
     response = requests.get(url)
     results = response.json()
+    return results
 
+def compute_metrics(results: dict) -> None:
     metrics_count = defaultdict(int)
     for entry in results:
         for ann in entry['annotations']:
@@ -278,14 +220,9 @@ def main():
     console.print(f"True Positive Rate (TPR): {TPR:.3f}")
     console.print(f"True Negative Rate (TNR): {TNR:.3f}")
     console.print(f"Balanced Accuracy: {balanced_acc:.3f}")
-    console.print(f"Confusion Matrix: {conf_matrix}")
-    
-    # # Save judge prompt
-    prompt_path = hw3_dir / "results" / "judge_prompt.txt"
-    save_judge_prompt(judge_prompt, str(prompt_path))
-    
-    console.print("\n[bold green]Judge development completed!")
-    console.print(f"[blue]Judge prompt saved to: {prompt_path}")
 
-if __name__ == "__main__":
-    main() 
+    from sklearn.metrics import ConfusionMatrixDisplay
+    import matplotlib.pyplot as plt
+    ConfusionMatrixDisplay(conf_matrix).plot()
+    plt.show()
+

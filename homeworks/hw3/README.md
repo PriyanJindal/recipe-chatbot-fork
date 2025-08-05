@@ -1,6 +1,6 @@
 # Homework 3: LLM-as-Judge for Recipe Bot Evaluation with Phoenix
 
-## Your Core Task: Evaluate "Adherence to Dietary Preferences" for the Recipe Bot
+## Evaluate "Adherence to Dietary Preferences" for the Recipe Bot
 
 **Example**: If a user asks for a "vegan" recipe, does the bot provide one that is actually vegan?
 
@@ -64,10 +64,6 @@ Choose the option that best fits your learning goals and available time!
 **Phoenix Setup:**
 1. Install Phoenix: `pip install arize-phoenix`
 2. Boot up your local Phoenix instance with `phoenix serve` and visit it at localhost:6006
-3. Set environment variable:
-   ```bash
-   export PHOENIX_COLLECTOR_ENDPOINT="YOUR HOSTNAME"
-   ```
 
 **Generate Traces:**
 - **Option 1**: Implement your own trace generation script that:

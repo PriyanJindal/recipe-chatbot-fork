@@ -20,6 +20,9 @@ import requests
 from collections import defaultdict
 from sklearn.metrics import confusion_matrix
 
+import os, sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 load_dotenv()
 
 # Set up Phoenix tracing
@@ -42,7 +45,7 @@ def generate_eval_prompt(input, metadata, base_prompt):
     """Generate evaluation prompt for a single example."""
     formatted_prompt = base_prompt.replace("{attributes.query}", str(input.get("attributes.query")))
     formatted_prompt = formatted_prompt.replace("{attributes.dietary_restriction}", str(metadata.get("attributes.dietary_restriction")))
-    formatted_prompt = formatted_prompt.replace("{attributes.output}", str(metadata.get("attributes.output.value")))
+    formatted_prompt = formatted_prompt.replace("{attributes.output.value}", str(metadata.get("attributes.output.value")))
 
     return formatted_prompt
 
@@ -183,13 +186,13 @@ def save_results(tpr: float, tnr: float, predictions: pd.DataFrame,
         }
     }
     
-    performance_path = results_dir / "judge_performance.json"
+    performance_path = results_dir + "/judge_performance.json"
     with open(performance_path, 'w') as f:
         json.dump(performance, f, indent=2)
     console.print(f"[green]Saved performance metrics to {performance_path}")
     
     # Save detailed predictions
-    predictions_path = results_dir / "test_predictions.json"
+    predictions_path = results_dir + "/test_predictions.json"
     predictions.to_json(predictions_path)
     console.print(f"[green]Saved test predictions to {predictions_path}")
     
@@ -203,7 +206,7 @@ def save_results(tpr: float, tnr: float, predictions: pd.DataFrame,
         "description": "Test set labels and predictions for judgy evaluation"
     }
     
-    judgy_path = results_dir / "judgy_test_data.json"
+    judgy_path = results_dir + "/judgy_test_data.json"
     with open(judgy_path, 'w') as f:
         json.dump(judgy_data, f, indent=2)
     console.print(f"[green]Saved judgy test data to {judgy_path}")
